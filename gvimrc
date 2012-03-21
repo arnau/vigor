@@ -3,7 +3,6 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-set t_Co=256
 set number
 set cursorline
 
@@ -18,8 +17,6 @@ set guioptions-=T
 
 " Use console dialogs
 set guioptions+=c
-
-colorscheme teaspoon
 
 set showtabline=2 " always show tabs in gvim, but not vim
 

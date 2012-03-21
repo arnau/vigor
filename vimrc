@@ -1,7 +1,11 @@
 set nocompatible
 
-":let mapleader=","
-":let mapleader="\\"
+" Load Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+filetype off " Needed so pathogen also loads ftdetect plugins.
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 :imap jj <Esc>
 
 set ruler
@@ -17,10 +21,10 @@ set expandtab
 set smarttab
 set backspace=indent,eol,start   " Allow backspacing over everything in insert mode
 
-" No backup
+" Backup
 set nobackup
 set nowritebackup
-"set backup                       " keep a backup file
+set noswapfile
 "set backupdir=~/.vimbackup,/tmp  " backup files directories
 "set directory=~/.vimbackup,/tmp  " swap files directories
 "set history=50                   " keep 50 lines of command line history
@@ -31,27 +35,28 @@ set complete=.,w,t
 set wildmenu
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
 
-set showcmd " display incomplete commands
+" Display incomplete commands
+set showcmd
 
-"statusline setup
-set statusline=%f                         "tail of the filename
-set statusline+=%y                        "filetype
-set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}
-set statusline+=%{fugitive#statusline()}
-set statusline+=%m                        "modified flag
-set statusline+=%=                        "left/right separator
-set statusline+=%c,                       "cursor column
-set statusline+=%l/%L                     "cursor line/total lines
-set statusline+=\ %P                      "percent through file
-set laststatus=2
-
-set linespace=1
-
+" Colors and Fonts
 set guifont=Menlo:h12
 set t_Co=256
 set background=dark
-"colorscheme xoria256
 colorscheme teaspoon
+
+"Statusline setup
+set statusline=%f     "tail of the filename
+set statusline+=%y    "filetype
+set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}
+set statusline+=%{fugitive#statusline()}
+set statusline+=%m    "modified flag
+set statusline+=%=    "left/right separator
+set statusline+=%c,   "cursor column
+set statusline+=%l/%L "cursor line/total lines
+set statusline+=\ %P  "percent through file
+set laststatus=2
+
+set linespace=1
 
 " Display extra whitespace
 set list listchars=tab:›\ ,trail:\ ,eol:¬
@@ -119,14 +124,6 @@ else
   set autoindent " always set autoindenting on
 endif " has("autocmd")
 
-"Pathogen plugin
-filetype off " Needed so pathogen also loads ftdetect plugins.
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
-" Re-enable per filetype plugins and indents after loading pathogen plugin
-filetype plugin indent on
-
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
@@ -139,5 +136,4 @@ augroup filetypedetect
     \ 'n3': { 'left': '# ' }
   \ }
 augroup END
-
 
