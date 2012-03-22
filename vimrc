@@ -9,7 +9,6 @@ call pathogen#helptags()
 
 " }}}
 
-
 set ruler
 set paste
 set encoding=utf-8
@@ -127,13 +126,6 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 
 " }}}
 
-
-" Command-T {{{
-
-let g:CommandTMaxHeight=20
-
-" }}}
-
 " Filetypes {{{
 
 augroup filetypedetect
@@ -143,6 +135,13 @@ augroup filetypedetect
     \ 'n3': { 'left': '# ' }
   \ }
 augroup END
+
+" }}}
+
+
+" Command-T {{{
+
+let g:CommandTMaxHeight=20
 
 " }}}
 
