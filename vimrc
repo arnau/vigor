@@ -1,18 +1,24 @@
 set nocompatible
 
-" Load Pathogen
+" Pathogen {{{
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off " Needed so pathogen also loads ftdetect plugins.
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-:imap jj <Esc>
+" }}}
+
 
 set ruler
 set paste
 set encoding=utf-8
 
-" Whitespace stuff
+" Display incomplete commands
+set showcmd
+
+" Whitespaces {{{
+
 set nowrap
 set tabstop=2
 set shiftwidth=2
@@ -20,65 +26,88 @@ set softtabstop=2
 set expandtab
 set smarttab
 set backspace=indent,eol,start   " Allow backspacing over everything in insert mode
+set linespace=1
+" Display extra whitespace
+set list listchars=tab:›\ ,trail:\ ,eol:¬
 
-" Backup
-set nobackup
-set nowritebackup
-set noswapfile
-"set backupdir=~/.vimbackup,/tmp  " backup files directories
-"set directory=~/.vimbackup,/tmp  " swap files directories
-"set history=50                   " keep 50 lines of command line history
+" Tab completion {{{
 
-" Tab completion options
 set wildmode=list:longest,list:full
 set complete=.,w,t
 set wildmenu
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
 
-" Display incomplete commands
-set showcmd
+" }}}
 
-" Colors and Fonts
+" }}}
+
+" Backup {{{
+
+set nobackup
+set nowritebackup
+"set noswapfile
+
+" Backup files directories
+"set backupdir=~/.vimbackup,/tmp
+" Swap files directories
+set directory=~/.vimbackup,/tmp
+" Keep 50 lines of command line history
+set history=50
+
+" Save and load folds
+autocmd BufWinLeave * silent! mkview
+autocmd BufWinEnter * silent! loadview
+
+" }}}
+
+" Colors and Fonts {{{
+
 set guifont=Menlo:h12
 set t_Co=256
 set background=dark
 colorscheme teaspoon
 
-"Statusline setup
-set statusline=%f     "tail of the filename
-set statusline+=%y    "filetype
+" }}}
+
+"Statusline {{{
+
+" Tail of the filename
+set statusline=%f
+" Filetype
+set statusline+=%y
+" Encoding
 set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}
+" Git branch
 set statusline+=%{fugitive#statusline()}
-set statusline+=%m    "modified flag
-set statusline+=%=    "left/right separator
-set statusline+=%c,   "cursor column
-set statusline+=%l/%L "cursor line/total lines
-set statusline+=\ %P  "percent through file
+" Modified flag
+set statusline+=%m
+" Left/right separator
+set statusline+=%=
+" Cursor column
+set statusline+=%c,
+" Cursor line/total lines
+set statusline+=%l/%L
+" Percent through file
+set statusline+=\ %P
 set laststatus=2
 
-set linespace=1
+" }}}
 
-" Display extra whitespace
-set list listchars=tab:›\ ,trail:\ ,eol:¬
+" Search {{{
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
+set incsearch
+set hlsearch
+
+" }}}
+
+" Mappings {{{
+
+:imap jj <Esc>
 
 " Keep visual mode after indenting
 vmap < <gv
 vmap > >gv
 
-" shift+arrow-keys to select text
-set keymodel=startsel
-
-" Show the next match while entering a search
-set incsearch
-
-"Highlighting search matches
-set hlsearch
-
-" MacVIM shift+arrow-keys behavior (required in .vimrc)
-""let macvim_hig_shift_movement = 1
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -93,6 +122,30 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+
+
+
+" }}}
+
+
+" Command-T {{{
+
+let g:CommandTMaxHeight=20
+
+" }}}
+
+" Filetypes {{{
+
+augroup filetypedetect
+  " RDF Notation 3 Syntax
+  au BufNewFile,BufRead *.n3,*.ttl  setfiletype n3
+  let g:NERDCustomDelimiters = {
+    \ 'n3': { 'left': '# ' }
+  \ }
+augroup END
+
+" }}}
+
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -128,12 +181,4 @@ endif " has("autocmd")
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
-augroup filetypedetect
-  " RDF Notation 3 Syntax
-  au BufNewFile,BufRead *.n3,*.ttl  setfiletype n3
-  let g:NERDCustomDelimiters = {
-    \ 'n3': { 'left': '# ' }
-  \ }
-augroup END
 
