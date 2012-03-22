@@ -154,6 +154,12 @@ if has("autocmd")
 
   " Treat JSON files like JavaScript
   au BufNewFile,BufRead *.json set ft=javascript
+
+  function s:setupWrapping()
+    set wrap
+    set wrapmargin=2
+    set textwidth=72
+  endfunction
 endif
 
 " }}}
