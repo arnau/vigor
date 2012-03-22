@@ -18,6 +18,13 @@ set showcmd
 set ignorecase
 set smartcase
 
+" TODO
+"set ttyfast
+
+""some stuff to get the mouse going in term
+"set mouse=a
+"set ttymouse=xterm
+
 " Whitespaces {{{
 
 set nowrap
