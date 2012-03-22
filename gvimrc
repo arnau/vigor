@@ -3,24 +3,24 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
+" Basic {{{
+
 set number
 set cursorline
-
 " Don't beep && don't flash
 set visualbell t_vb=
-
 " Start without the toolbar
 set guioptions=aAce
-
 " No toolbar
 set guioptions-=T
-
 " Use console dialogs
 set guioptions+=c
+set showtabline=2
 
-set showtabline=2 " always show tabs in gvim, but not vim
+" }}}
 
-" set up tab labels with tab number, buffer name, number of windows
+
+" Set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
   let label = ''
   let bufnrlist = tabpagebuflist(v:lnum)
@@ -51,6 +51,7 @@ function! GuiTabLabel()
   let wincount = tabpagewinnr(v:lnum, '$')
   return label . '  [' . wincount . ']'
 endfunction
+
 set guitablabel=%{GuiTabLabel()}
 
 if has("gui_macvim")
@@ -59,10 +60,6 @@ if has("gui_macvim")
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
-
-  " Command-/ to toggle comments
-  "map <D-/> <plug>NERDCommenterToggle<CR>
-  "imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 
   " Map Command-# to switch tabs
   map  <D-0> 0gt
@@ -96,15 +93,6 @@ if has("gui_macvim")
   map <D-M-Left> <C-w>h
   imap <D-M-Left> <C-w>h
 else
-  " Alt-e for ConqueTerm
-  map <A-e> :call StartTerm()<CR>
-
-  " Alt-Shift-F for Ack
-  " map <A-F> :Ack<space>
-
-  " Alt-/ to toggle comments
-  "map <A-/> <plug>NERDCommenterToggle<CR>
-  "imap <A-/> <Esc><plug>NERDCommenterToggle<CR>i
 
   " Map Alt-# to switch tabs
   map  <A-0> 0gt
