@@ -15,6 +15,8 @@ set encoding=utf-8
 
 " Display incomplete commands
 set showcmd
+set ignorecase
+set smartcase
 
 " Whitespaces {{{
 
