@@ -131,19 +131,30 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
-
+" Open a new vertical split and switch to it
+nnoremap <leader>v <C-w>v<C-w>l
+" Open a new horizontal split and switch to it
+nnoremap <leader>s <C-w>s<C-w>j
 
 " }}}
 
 " Filetypes {{{
 
-augroup filetypedetect
-  " RDF Notation 3 Syntax
-  au BufNewFile,BufRead *.n3,*.ttl  setfiletype n3
-  let g:NERDCustomDelimiters = {
-    \ 'n3': { 'left': '# ' }
-  \ }
-augroup END
+if has("autocmd")
+  augroup filetypedetect
+    " RDF Notation 3 Syntax
+    au BufNewFile,BufRead *.n3,*.ttl  setfiletype n3
+    let g:NERDCustomDelimiters = {
+      \ 'n3': { 'left': '# ' }
+    \ }
+  augroup END
+
+  " Make sure all markdown files have the correct filetype set and setup wrapping
+  au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
+
+  " Treat JSON files like JavaScript
+  au BufNewFile,BufRead *.json set ft=javascript
+endif
 
 " }}}
 
