@@ -46,10 +46,6 @@
 	path = bundle/teaspoon
 	url = https://github.com/arnau/teaspoon.vim
   ignore=dirty
-[submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = https://github.com/vim-scripts/closetag.vim
-  ignore=dirty
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
