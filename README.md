@@ -31,7 +31,7 @@ If it's already installed you can update it running
 * https://github.com/vim-scripts/n3.vim.git
 * https://github.com:arnau/sparql.vim.git
 * https://github.com/arnau/teaspoon.vim
-* https://github.com/vim-scripts/closetag.vim
+* https://github.com/tpope/vim-ragtag.git
 * https://github.com/tpope/vim-repeat.git
 * https://github.com/tpope/vim-surround.git
 * https://github.com/tpope/vim-pathogen.git
