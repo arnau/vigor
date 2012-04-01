@@ -62,7 +62,3 @@
 	path = bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
   ignore=dirty
-[submodule "bundle/sparkup"]
-	path = bundle/sparkup
-	url = https://github.com/rstacruz/sparkup.git
-  ignore=dirty
