@@ -35,7 +35,7 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-repeat.git
 * https://github.com/tpope/vim-surround.git
 * https://github.com/tpope/vim-pathogen.git
-
+* https://github.com/rstacruz/sparkup.git
 
 ## Credits
 
