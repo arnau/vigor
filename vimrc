@@ -174,6 +174,10 @@ endif
 
 " }}}
 
+" ZenCoding {{{
+let g:user_zen_expandabbr_key = '<c-z>'
+let g:use_zen_complete_tag = 1
+" }}}
 
 " Command-T {{{
 
