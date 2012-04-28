@@ -36,6 +36,7 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-surround.git
 * https://github.com/tpope/vim-pathogen.git
 * https://github.com/vim-scripts/ZenCoding.vim.git
+* https://github.com/kchmck/vim-coffee-script.git bundle/vim-coffe-script
 
 ## Credits
 

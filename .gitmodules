@@ -66,3 +66,7 @@
 	path = bundle/ZenCoding
 	url = https://github.com/vim-scripts/ZenCoding.vim.git
   ignore=dirty
+[submodule "bundle/vim-coffe-script"]
+	path = bundle/vim-coffe-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+  ignore=dirty
