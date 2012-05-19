@@ -162,7 +162,7 @@ if has("autocmd")
   endfunction
 
   " Treat RDF/XML files like XML
-  au BufNewFile,BufRead *.{rdf,rdfs,owl} set ft=javascript
+  au BufNewFile,BufRead *.{rdf,rdfs,owl} set ft=xml
   " Reformat XML
   " TODO: verify what happen when a non-UTF-8 XML is saved after xmllint
   au FileType xml exe ":silent 1,$!xmllint --format --encode UTF-8 --recover - 2>/dev/null"
