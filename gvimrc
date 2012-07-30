@@ -5,8 +5,6 @@ endif
 
 " Basic {{{
 
-set number
-set cursorline
 " Don't beep && don't flash
 set visualbell t_vb=
 " Start without the toolbar

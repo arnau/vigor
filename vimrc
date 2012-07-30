@@ -9,6 +9,9 @@ call pathogen#helptags()
 
 " }}}
 
+set number
+set cursorline
+set visualbell t_vb=
 set ruler
 set paste
 set encoding=utf-8
@@ -165,7 +168,7 @@ if has("autocmd")
   au BufNewFile,BufRead *.{rdf,rdfs,owl} set ft=xml
   " Reformat XML
   " TODO: verify what happen when a non-UTF-8 XML is saved after xmllint
-  au FileType xml exe ":silent 1,$!xmllint --format --encode UTF-8 --recover - 2>/dev/null"
+  " au FileType xml exe ":silent 1,$!xmllint --format --encode UTF-8 --recover - 2>/dev/null"
   let g:xml_syntax_folding = 1
   " TODO: use a remap
   "set foldmethod=syntax
