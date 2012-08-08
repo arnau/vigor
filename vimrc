@@ -122,22 +122,20 @@ vmap > >gv
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+map <Leader>vs :vs <C-R>=expand("%:p:h") . "/" <CR>
+map <Leader>sp :sp <C-R>=expand("%:p:h") . "/" <CR>
 
 " Opens a tab edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>t
+" Normal mode: <Leader>te
 map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
+
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
-
-" Open a new vertical split and switch to it
-nnoremap <leader>v <C-w>v<C-w>l
-" Open a new horizontal split and switch to it
-nnoremap <leader>s <C-w>s<C-w>j
 
 " }}}
 
@@ -168,7 +166,7 @@ if has("autocmd")
   au BufNewFile,BufRead *.{rdf,rdfs,owl} set ft=xml
   " Reformat XML
   " TODO: verify what happen when a non-UTF-8 XML is saved after xmllint
-  " au FileType xml exe ":silent 1,$!xmllint --format --encode UTF-8 --recover - 2>/dev/null"
+  " au FileType xml exe \":silent 1,$!xmllint --format --encode UTF-8 --recover - 2>/dev/null"
   let g:xml_syntax_folding = 1
   " TODO: use a remap
   "set foldmethod=syntax
@@ -178,10 +176,12 @@ endif
 " }}}
 
 " ZenCoding {{{
-let g:user_zen_expandabbr_key = '<c-z>'
-let g:use_zen_complete_tag = 1
+let g:user_zen_expandabbr_key = '<C-z>'
+let g:user_zen_complete_tag = 1
+let g:user_zen_settings = {
+\  'indentation' : '  '
+\}
 " }}}
-
 " Command-T {{{
 
 let g:CommandTMaxHeight=20
