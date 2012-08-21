@@ -15,18 +15,27 @@ set visualbell t_vb=
 set ruler
 set paste
 set encoding=utf-8
+set autoindent " always set autoindenting on
 
 " Display incomplete commands
 set showcmd
 set ignorecase
 set smartcase
 
-" TODO
-"set ttyfast
+set ttyfast
 
 ""some stuff to get the mouse going in term
-"set mouse=a
-"set ttymouse=xterm
+set mouse=a
+set ttymouse=xterm
+
+if &term =~ '^xterm'
+  " solid underscore
+  let &t_SI .= "\<Esc>[4 q"
+  " solid block
+  let &t_EI .= "\<Esc>[2 q"
+  " 1 or 0 -> blinking block
+  " 3 -> blinking underscore
+endif
 
 " Whitespaces {{{
 
@@ -144,9 +153,12 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:
 if has("autocmd")
   augroup filetypedetect
     " RDF Notation 3 Syntax
-    au BufNewFile,BufRead *.n3,*.ttl  setfiletype n3
+    au BufNewFile,BufRead *.n3,*.ttl,*.trig  setfiletype n3
+    au BufNewFile,BufRead *.rq,*.sparql  setfiletype sparql
     let g:NERDCustomDelimiters = {
       \ 'n3': { 'left': '# ' }
+      \ 'ttl': { 'left': '# ' }
+      \ 'sparql': { 'left': '# ' }
     \ }
   augroup END
 
@@ -198,7 +210,6 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
   " Enable file type detection.
   " Use the default filetype settings, so that mail gets 'tw' set to 72,
   " 'cindent' is on in C files, etc.
@@ -215,8 +226,6 @@ if has("autocmd")
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
     \   exe "normal g`\"" |
     \ endif
-else
-  set autoindent " always set autoindenting on
 endif " has("autocmd")
 
 " Include user's local vim config
