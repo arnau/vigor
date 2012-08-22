@@ -156,8 +156,8 @@ if has("autocmd")
     au BufNewFile,BufRead *.n3,*.ttl,*.trig  setfiletype n3
     au BufNewFile,BufRead *.rq,*.sparql  setfiletype sparql
     let g:NERDCustomDelimiters = {
-      \ 'n3': { 'left': '# ' }
-      \ 'ttl': { 'left': '# ' }
+      \ 'n3': { 'left': '# ' },
+      \ 'ttl': { 'left': '# ' },
       \ 'sparql': { 'left': '# ' }
     \ }
   augroup END
