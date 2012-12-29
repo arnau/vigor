@@ -70,3 +70,7 @@
 	path = bundle/vim-coffe-script
 	url = https://github.com/kchmck/vim-coffee-script.git
   ignore=dirty
+[submodule "bundle/vim-r-plugin"]
+	path = bundle/vim-r-plugin
+	url = git://github.com/vim-scripts/Vim-R-plugin.git
+  ignore=dirty
