@@ -200,6 +200,12 @@ let g:CommandTMaxHeight=20
 
 " }}}
 
+" R {{{
+
+let vimrplugin_screenvsplit = 1
+let ScreenImpl = 'Tmux'
+
+" }}}
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
