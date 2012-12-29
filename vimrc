@@ -1,5 +1,7 @@
 set nocompatible
 
+let maplocalleader = ","
+
 " Pathogen {{{
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
