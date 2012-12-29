@@ -6,7 +6,7 @@ Vigor is Arnau Siches' Vim Playground.
 
 First, clone the repository.
 
-    $ git clone git://github.com/asiches/vigor.git ~/.vim
+    $ git clone git://github.com/arnau/Vigor.git ~/.vim
 
 Then `cd` into the repo and run (notice: if you're using RVM, change to your Ruby system version before install or update):
 
