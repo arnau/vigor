@@ -38,6 +38,7 @@ If it's already installed you can update it running
 * https://github.com/vim-scripts/ZenCoding.vim.git
 * https://github.com/kchmck/vim-coffee-script.git bundle/vim-coffe-script
 * https://github.com/vim-scripts/Vim-R-plugin.git
+* https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
 
 ## Credits
 
