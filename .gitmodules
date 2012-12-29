@@ -4,7 +4,7 @@
   ignore=dirty
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
+	url = https://github.com/vim-scripts/matchit.zip.git
   ignore=dirty
 [submodule "bundle/vim-align"]
 	path = bundle/vim-align
@@ -36,11 +36,11 @@
   ignore=dirty
 [submodule "bundle/n3"]
 	path = bundle/n3
-	url = git://github.com/vim-scripts/n3.vim.git
+	url = https://github.com/vim-scripts/n3.vim.git
   ignore=dirty
 [submodule "bundle/sparql"]
 	path = bundle/sparql
-	url = git@github.com:arnau/sparql.vim.git
+	url = https://github.com/arnau/sparql.vim.git
   ignore=dirty
 [submodule "bundle/teaspoon"]
 	path = bundle/teaspoon
@@ -72,5 +72,5 @@
   ignore=dirty
 [submodule "bundle/vim-r-plugin"]
 	path = bundle/vim-r-plugin
-	url = git://github.com/vim-scripts/Vim-R-plugin.git
+	url = https://github.com/vim-scripts/Vim-R-plugin.git
   ignore=dirty
