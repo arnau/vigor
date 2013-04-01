@@ -118,7 +118,7 @@ set hlsearch
 
 " Mappings {{{
 
-:imap jj <Esc>
+"imap jj <Esc>
 
 " Keep visual mode after indenting
 vmap < <gv
