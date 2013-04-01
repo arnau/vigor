@@ -107,6 +107,9 @@ set laststatus=2
 " }}}
 
 " Search {{{
+" fixes crazy regex style to what I expect to be
+nnoremap / /\v
+vnoremap / /\v
 
 set incsearch
 set hlsearch
