@@ -25,7 +25,6 @@ If it's already installed you can update it running
 * https://github.com/scrooloose/nerdcommenter.git
 * https://github.com/ervandew/supertab
 * https://github.com/tpope/vim-endwise
-* https://github.com/msanders/snipmate.vim
 * https://github.com/Raimondi/delimitMate
 * https://github.com/vim-scripts/n3.vim.git
 * https://github.com/arnau/sparql.vim.git

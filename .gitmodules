@@ -22,10 +22,6 @@
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise
   ignore=dirty
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim
-  ignore=dirty
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
