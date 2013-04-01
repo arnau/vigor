@@ -27,7 +27,6 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-endwise
 * https://github.com/msanders/snipmate.vim
 * https://github.com/Raimondi/delimitMate
-* git://git.wincent.com/command-t.git
 * https://github.com/vim-scripts/n3.vim.git
 * https://github.com/arnau/sparql.vim.git
 * https://github.com/arnau/teaspoon.vim
