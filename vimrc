@@ -197,11 +197,6 @@ let g:user_zen_settings = {
 \  'indentation' : '  '
 \}
 " }}}
-" Command-T {{{
-
-let g:CommandTMaxHeight=20
-
-" }}}
 
 " R {{{
 
