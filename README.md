@@ -20,7 +20,7 @@ If it's already installed you can update it running
 ## Bundles
 
 * https://github.com/tpope/vim-fugitive.git
-* https//github.com/vim-scripts/matchit.zip.git
+* https://github.com/vim-scripts/matchit.zip.git
 * https://github.com/tsaleh/vim-align.git
 * https://github.com/scrooloose/nerdcommenter.git
 * https://github.com/ervandew/supertab
