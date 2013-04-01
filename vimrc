@@ -142,6 +142,13 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
+nnoremap ; :
+
+" switch off F1
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
 " }}}
 
 " Filetypes {{{
