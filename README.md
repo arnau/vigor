@@ -38,6 +38,7 @@ If it's already installed you can update it running
 * https://github.com/vim-scripts/Vim-R-plugin.git
 * https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
 * https://github.com/puppetlabs/puppet-syntax-vim
+* https://github.com/tpope/vim-tbone.git
 
 ## Credits
 
