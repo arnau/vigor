@@ -77,6 +77,8 @@
 [submodule "bundle/vim-tbone"]
 	path = bundle/vim-tbone
 	url = https://github.com/tpope/vim-tbone.git
+  ignore=dirty
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/oscarh/vimerl.git
+  ignore=dirty
