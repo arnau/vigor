@@ -40,7 +40,7 @@ If it's already installed you can update it running
 * https://github.com/puppetlabs/puppet-syntax-vim
 * https://github.com/tpope/vim-tbone.git
 * https://github.com/oscarh/vimerl.git
-
+* https://github.com/editorconfig/editorconfig-vim.git
 
 ## Credits
 
