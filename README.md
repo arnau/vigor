@@ -41,6 +41,7 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-tbone.git
 * https://github.com/oscarh/vimerl.git
 * https://github.com/editorconfig/editorconfig-vim.git
+* https://github.com/kien/ctrlp.vim.git
 
 ## Credits
 
