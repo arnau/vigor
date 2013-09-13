@@ -48,7 +48,7 @@ set list listchars=tab:›\ ,trail:\ ,eol:¬
 set wildmode=list:longest,list:full
 set complete=.,w,t
 set wildmenu
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*
 
 " }}}
 
