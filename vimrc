@@ -42,7 +42,7 @@ set smarttab
 set backspace=indent,eol,start   " Allow backspacing over everything in insert mode
 set linespace=1
 " Display extra whitespace
-set list listchars=tab:›\ ,trail:\ ,eol:¬
+set list listchars=tab:→\ ,trail:\ ,eol:¬
 
 " Tab completion {{{
 
@@ -52,6 +52,13 @@ set wildmenu
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*
 
 " }}}
+
+" }}}
+
+
+" Save as root {{{
+
+cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 " }}}
 
