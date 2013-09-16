@@ -18,6 +18,7 @@ set ruler
 set paste
 set encoding=utf-8
 set autoindent " always set autoindenting on
+set autoread " update a open file edited outside of Vim
 
 " Display incomplete commands
 set showcmd
