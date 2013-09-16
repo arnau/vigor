@@ -45,6 +45,7 @@ If it's already installed you can update it running
 * http://github.com/Shougo/vimproc.git
 * https://github.com/Shougo/vimshell.vim.git
 * https://github.com/Shougo/unite.vim.git
+* https://github.com/bling/vim-airline
 
 ## Credits
 
