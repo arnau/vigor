@@ -95,3 +95,6 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = http://github.com/Shougo/vimproc.git
+[submodule "bundle/unite.vim"]
+	path = bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim

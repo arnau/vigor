@@ -44,6 +44,7 @@ If it's already installed you can update it running
 * https://github.com/kien/ctrlp.vim.git
 * http://github.com/Shougo/vimproc.git
 * https://github.com/Shougo/vimshell.vim.git
+* https://github.com/Shougo/unite.vim.git
 
 ## Credits
 
