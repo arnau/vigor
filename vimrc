@@ -196,14 +196,16 @@ let g:airline_mode_map = {
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
+"let g:airline_left_sep='➡'
+let g:airline_left_sep='▶'
 let g:airline_left_sep='➡'
 let g:airline_right_sep='⬅'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.branch = '☍'
 let g:airline_symbols.linenr = '✦'
 
-"let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%f'
 
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
