@@ -223,6 +223,8 @@ map <LocalLeader>ggp :GitGutterPrevHunk <CR>
 map <LocalLeader>ggh :GitGutterLineHighlightsToggle <CR>
 map <LocalLeader>ggt :GitGutterToggle <CR>
 
+let g:gitgutter_eager = 0
+
 " }}}
 
 " Filetypes {{{
