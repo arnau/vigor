@@ -180,20 +180,22 @@ let g:airline#extensions#whitespace#mixed_indent_format = 'm %s'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_min_count = 0
+let g:airline#extensions#bufferline#enabled = 0
 
 let g:airline_mode_map = {
-      \ '__' : '-',
-      \ 'n'  : 'N',
-      \ 'i'  : 'I',
-      \ 'R'  : 'R',
-      \ 'c'  : 'C',
-      \ 'v'  : 'V',
-      \ 'V'  : 'V',
-      \ '' : 'V',
-      \ 's'  : 'S',
-      \ 'S'  : 'S',
-      \ '' : 'S',
-      \ }
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V',
+  \ '' : 'V',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
+
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
