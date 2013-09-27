@@ -218,9 +218,10 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 
 " GitGutter {{{
 
-map <Leader>hn :GitGutterNextHunk <CR>
-map <Leader>hp :GitGutterPrevHunk <CR>
-map <Leader>tgg :GitGutterLineHighlightsToggle <CR>
+map <LocalLeader>ggn :GitGutterNextHunk <CR>
+map <LocalLeader>ggp :GitGutterPrevHunk <CR>
+map <LocalLeader>ggh :GitGutterLineHighlightsToggle <CR>
+map <LocalLeader>ggt :GitGutterToggle <CR>
 
 " }}}
 
