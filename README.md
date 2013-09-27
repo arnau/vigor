@@ -46,6 +46,7 @@ If it's already installed you can update it running
 * https://github.com/Shougo/vimshell.vim.git
 * https://github.com/Shougo/unite.vim.git
 * https://github.com/bling/vim-airline
+* https://github.com/airblade/vim-gitgutter
 
 ## Credits
 

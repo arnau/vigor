@@ -214,6 +214,14 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 
 " }}}
 
+" GitGutter {{{
+
+map <Leader>hn :GitGutterNextHunk <CR>
+map <Leader>hp :GitGutterPrevHunk <CR>
+map <Leader>tgg :GitGutterLineHighlightsToggle <CR>
+
+" }}}
+
 " Filetypes {{{
 
 if has("autocmd")
