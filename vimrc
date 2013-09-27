@@ -163,15 +163,16 @@ vnoremap <F1> <ESC>
 " Unite
 source ~/.vim/sections/unite
 
-"airline
-let g:airline_theme='powerlineish'
-let g:airline_enable_branch=1
+" Airline {{{
+
+let g:airline_theme = 'powerlineish'
+let g:airline_enable_branch = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#branch#empty_message = 'foo'
 let g:airline#extensions#syntastic#enabled = 1
-let g:airline_detect_paste=0
-let g:airline_detect_modified=1
-let g:airline_powerline_fonts=0
+let g:airline_detect_paste = 0
+let g:airline_detect_modified = 1
+let g:airline_powerline_fonts = 0
 let g:airline_detect_whitespace = 1
 let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#whitespace#trailing_format = 't %s'
@@ -196,10 +197,9 @@ let g:airline_mode_map = {
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-"let g:airline_left_sep='➡'
-let g:airline_left_sep='▶'
-let g:airline_left_sep='➡'
-let g:airline_right_sep='⬅'
+
+let g:airline_left_sep = '➡'
+let g:airline_right_sep = '⬅'
 let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.branch = '☍'
@@ -212,6 +212,7 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 
+" }}}
 
 " Filetypes {{{
 
@@ -298,4 +299,3 @@ endif " has("autocmd")
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
