@@ -16,7 +16,6 @@ If it's already installed you can update it running
 
     $ rake update
 
-
 ## Bundles
 
 * https://github.com/tpope/vim-fugitive.git
@@ -26,27 +25,49 @@ If it's already installed you can update it running
 * https://github.com/ervandew/supertab
 * https://github.com/tpope/vim-endwise
 * https://github.com/Raimondi/delimitMate
-* https://github.com/vim-scripts/n3.vim.git
-* https://github.com/arnau/sparql.vim.git
-* https://github.com/arnau/teaspoon.vim
 * https://github.com/tpope/vim-ragtag.git
 * https://github.com/tpope/vim-repeat.git
 * https://github.com/tpope/vim-surround.git
 * https://github.com/tpope/vim-pathogen.git
 * https://github.com/vim-scripts/ZenCoding.vim.git
-* https://github.com/kchmck/vim-coffee-script.git
 * https://github.com/vim-scripts/Vim-R-plugin.git
 * https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
-* https://github.com/puppetlabs/puppet-syntax-vim
 * https://github.com/tpope/vim-tbone.git
-* https://github.com/oscarh/vimerl.git
 * https://github.com/editorconfig/editorconfig-vim.git
-* https://github.com/kien/ctrlp.vim.git
 * http://github.com/Shougo/vimproc.git
 * https://github.com/Shougo/vimshell.vim.git
 * https://github.com/Shougo/unite.vim.git
 * https://github.com/bling/vim-airline
 * https://github.com/airblade/vim-gitgutter
+* https://github.com/kien/ctrlp.vim.git
+
+### Syntaxes
+
+* https://github.com/oscarh/vimerl.git
+* https://github.com/vim-scripts/n3.vim.git
+* https://github.com/arnau/sparql.vim.git
+* https://github.com/kchmck/vim-coffee-script.git
+* https://github.com/puppetlabs/puppet-syntax-vim
+* https://github.com/vim-scripts/JSON.vim
+
+### Color schemes
+
+* https://github.com/arnau/teaspoon.vim
+
+
+### Syntaxes
+
+* https://github.com/oscarh/vimerl.git
+* https://github.com/vim-scripts/n3.vim.git
+* https://github.com/arnau/sparql.vim.git
+* https://github.com/kchmck/vim-coffee-script.git
+* https://github.com/puppetlabs/puppet-syntax-vim
+* https://github.com/vim-scripts/JSON.vim
+
+### Color schemes
+
+* https://github.com/arnau/teaspoon.vim
+
 
 ## Credits
 
