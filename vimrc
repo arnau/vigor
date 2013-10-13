@@ -59,7 +59,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,
 
 " Save as root {{{
 
-cmap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
+cnoremap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
 
 " }}}
 
@@ -127,25 +127,23 @@ set hlsearch
 
 " Mappings {{{
 
-"imap jj <Esc>
-
 " Keep visual mode after indenting
-vmap < <gv
-vmap > >gv
+vnoremap < <gv
+vnoremap > >gv
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
-map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-map <Leader>vs :vs <C-R>=expand("%:p:h") . "/" <CR>
-map <Leader>sp :sp <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>vs :vs <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>sp :sp <C-R>=expand("%:p:h") . "/" <CR>
 
 " Opens a tab edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>te
-map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
-cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 
 " Hitting F5 will clean out all trailing whitespace or tabs
@@ -218,10 +216,10 @@ let g:airline#extensions#tabline#right_alt_sep = ''
 
 " GitGutter {{{
 
-map <LocalLeader>ggn :GitGutterNextHunk <CR>
-map <LocalLeader>ggp :GitGutterPrevHunk <CR>
-map <LocalLeader>ggh :GitGutterLineHighlightsToggle <CR>
-map <LocalLeader>ggt :GitGutterToggle <CR>
+noremap <LocalLeader>ggn :GitGutterNextHunk <CR>
+noremap <LocalLeader>ggp :GitGutterPrevHunk <CR>
+noremap <LocalLeader>ggh :GitGutterLineHighlightsToggle <CR>
+noremap <LocalLeader>ggt :GitGutterToggle <CR>
 
 let g:gitgutter_eager = 0
 
