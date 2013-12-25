@@ -54,21 +54,6 @@ If it's already installed you can update it running
 
 * https://github.com/arnau/teaspoon.vim
 
-
-### Syntaxes
-
-* https://github.com/oscarh/vimerl.git
-* https://github.com/vim-scripts/n3.vim.git
-* https://github.com/arnau/sparql.vim.git
-* https://github.com/kchmck/vim-coffee-script.git
-* https://github.com/puppetlabs/puppet-syntax-vim
-* https://github.com/vim-scripts/JSON.vim
-
-### Color schemes
-
-* https://github.com/arnau/teaspoon.vim
-
-
 ## Credits
 
 Arnau Siches under MIT License.
