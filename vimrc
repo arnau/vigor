@@ -265,10 +265,10 @@ endif
 
 " }}}
 
-" ZenCoding {{{
-let g:user_zen_expandabbr_key = '<C-z>'
-let g:user_zen_complete_tag = 1
-let g:user_zen_settings = {
+" Emmet {{{
+let g:user_emmet_expandabbr_key = '<c-z>'
+let g:use_emmet_complete_tag = 1
+let g:user_emmet_settings = {
 \  'indentation' : '  '
 \}
 " }}}
