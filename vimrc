@@ -225,6 +225,7 @@ let g:gitgutter_eager = 0
 
 " }}}
 
+
 " Filetypes {{{
 
 if has("autocmd")
@@ -279,6 +280,8 @@ let ScreenImpl = 'Tmux'
 
 " }}}
 
+let g:ragtag_global_maps = 1
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -305,7 +308,6 @@ if has("autocmd")
     \   exe "normal g`\"" |
     \ endif
 endif " has("autocmd")
-
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
