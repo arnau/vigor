@@ -20,6 +20,7 @@ set encoding=utf-8
 set autoindent " always set autoindenting on
 set autoread " update a open file edited outside of Vim
 set ttimeoutlen=50
+set colorcolumn=80
 
 " Display incomplete commands
 set showcmd
