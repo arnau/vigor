@@ -49,6 +49,7 @@ If it's already installed you can update it running
 * https://github.com/kchmck/vim-coffee-script.git
 * https://github.com/puppetlabs/puppet-syntax-vim
 * https://github.com/vim-scripts/JSON.vim
+* https://github.com/jnwhiteh/vim-golang
 
 ### Color schemes
 
