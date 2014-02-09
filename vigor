@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+case $1 in
+install)
+  git submodule update --init
+  ln -s ~/.vim/vimrc ~/.vimrc
+  ln -s ~/.vim/gvimrc ~/.gvimrc
+  ;;
+update)
+  git pull
+  git submodule sync
+  git submodule update --init --recursive
+  ;;
+*)
+  echo "Use install or update" ;;
+esac
