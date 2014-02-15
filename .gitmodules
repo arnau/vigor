@@ -117,9 +117,12 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown
+  ignore=dirty
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+  ignore=dirty
 [submodule "bundle/vim-golang"]
 	path = bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang
+  ignore=dirty
