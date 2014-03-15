@@ -50,6 +50,7 @@ If it's already installed you can update it running
 * https://github.com/puppetlabs/puppet-syntax-vim
 * https://github.com/vim-scripts/JSON.vim
 * https://github.com/jnwhiteh/vim-golang
+* https://github.com/wavded/vim-stylus
 
 ### Color schemes
 

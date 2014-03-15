@@ -126,3 +126,7 @@
 	path = bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang
   ignore=dirty
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = https://github.com/wavded/vim-stylus
+  ignore=dirty
