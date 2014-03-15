@@ -130,3 +130,6 @@
 	path = bundle/vim-stylus
 	url = https://github.com/wavded/vim-stylus
   ignore=dirty
+[submodule "bundle/vim-mustache-handlebars"]
+	path = bundle/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars

@@ -51,6 +51,7 @@ If it's already installed you can update it running
 * https://github.com/vim-scripts/JSON.vim
 * https://github.com/jnwhiteh/vim-golang
 * https://github.com/wavded/vim-stylus
+* https://github.com/mustache/vim-mustache-handlebars
 
 ### Color schemes
 
