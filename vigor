@@ -2,6 +2,7 @@
 
 case $1 in
 install)
+  bundle install
   git submodule update --init
   ln -s ~/.vim/vimrc ~/.vimrc
   ln -s ~/.vim/gvimrc ~/.gvimrc
@@ -10,6 +11,7 @@ update)
   git pull
   git submodule sync
   git submodule update --init --recursive
+  bundle update
   ;;
 *)
   echo "Use install or update" ;;

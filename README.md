@@ -40,6 +40,7 @@ If it's already installed you can update it running
 * https://github.com/bling/vim-airline
 * https://github.com/airblade/vim-gitgutter
 * https://github.com/kien/ctrlp.vim.git
+* https://github.com/t9md/vim-ruby-xmpfilter
 
 ### Syntaxes
 
