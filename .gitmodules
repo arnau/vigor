@@ -133,6 +133,8 @@
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars
+  ignore=dirty
 [submodule "bundle/vim-ruby-xmpfilter"]
 	path = bundle/vim-ruby-xmpfilter
 	url = https://github.com/t9md/vim-ruby-xmpfilter
+  ignore=dirty
