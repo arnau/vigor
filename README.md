@@ -58,6 +58,13 @@ If it's already installed you can update it running
 
 * https://github.com/arnau/teaspoon.vim
 
+## Snippets
+
+* Reformat JSON
+
+    :%!python -m json.tool
+
+
 ## Credits
 
 Arnau Siches under MIT License.
