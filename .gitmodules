@@ -138,3 +138,6 @@
 	path = bundle/vim-ruby-xmpfilter
 	url = https://github.com/t9md/vim-ruby-xmpfilter
   ignore=dirty
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = https://github.com/tpope/vim-rake
