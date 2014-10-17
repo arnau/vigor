@@ -120,6 +120,8 @@ set laststatus=2
 " fixes crazy regex style to what I expect to be
 nnoremap / /\v
 vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ? ?\v
 
 set incsearch
 set hlsearch
