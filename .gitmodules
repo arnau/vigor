@@ -144,3 +144,6 @@
 [submodule "vimfiler.vim"]
 	path = bundle/vimfiler.vim
 	url = https://github.com/Shougo/vimfiler.vim
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
