@@ -237,6 +237,7 @@ if has("autocmd")
     let g:NERDCustomDelimiters = {
       \ 'n3': { 'left': '# ' },
       \ 'ttl': { 'left': '# ' },
+      \ 'dockerfile': { 'left': '# ' },
       \ 'sparql': { 'left': '# ' }
     \ }
   augroup END
@@ -259,6 +260,7 @@ if has("autocmd")
   " TODO: use a remap
   "set foldmethod=syntax
 
+  autocmd FileType dockerfile set commentstring=#\ %s
 endif
 
 " }}}

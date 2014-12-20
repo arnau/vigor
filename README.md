@@ -42,6 +42,7 @@ If it's already installed you can update it running
 * https://github.com/kien/ctrlp.vim.git
 * https://github.com/t9md/vim-ruby-xmpfilter
 * https://github.com/tpope/vim-rake
+* https://github.com/honza/dockerfile.vim
 
 ### Syntaxes
 
