@@ -4,6 +4,10 @@ Vigor is Arnau Siches' Vim Playground.
 
 ## Usage
 
+Use the dockerized version:
+
+    $ docker run --rm -it -v /var/foo:/var/foo -w /var/foo
+
 First, clone the repository.
 
     $ git clone git://github.com/arnau/Vigor.git ~/.vim
