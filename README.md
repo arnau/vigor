@@ -19,6 +19,10 @@ If it's already installed you can update it running
     $ cd ~/.vim
     $ ./vigor update
 
+## Some anti-patterns
+
+http://rbtnn.hateblo.jp/entry/2014/12/28/010913
+
 ## Bundles
 
 * https://github.com/tpope/vim-fugitive.git
