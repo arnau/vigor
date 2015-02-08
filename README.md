@@ -63,6 +63,7 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/jnwhiteh/vim-golang
 * https://github.com/wavded/vim-stylus
 * https://github.com/mustache/vim-mustache-handlebars
+* https://github.com/pangloss/vim-javascript.git
 
 ### Color schemes
 
