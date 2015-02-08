@@ -115,38 +115,42 @@
   url = https://github.com/vim-scripts/Emmet.vim
   ignore=dirty
 [submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/tpope/vim-markdown
+  path = bundle/vim-markdown
+  url = https://github.com/tpope/vim-markdown
   ignore=dirty
 [submodule "bundle/vim-commentary"]
-	path = bundle/vim-commentary
-	url = https://github.com/tpope/vim-commentary
+  path = bundle/vim-commentary
+  url = https://github.com/tpope/vim-commentary
   ignore=dirty
 [submodule "bundle/vim-golang"]
-	path = bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang
+  path = bundle/vim-golang
+  url = https://github.com/jnwhiteh/vim-golang
   ignore=dirty
 [submodule "bundle/vim-stylus"]
-	path = bundle/vim-stylus
-	url = https://github.com/wavded/vim-stylus
+  path = bundle/vim-stylus
+  url = https://github.com/wavded/vim-stylus
   ignore=dirty
 [submodule "bundle/vim-mustache-handlebars"]
-	path = bundle/vim-mustache-handlebars
-	url = https://github.com/mustache/vim-mustache-handlebars
+  path = bundle/vim-mustache-handlebars
+  url = https://github.com/mustache/vim-mustache-handlebars
   ignore=dirty
 [submodule "bundle/vim-ruby-xmpfilter"]
-	path = bundle/vim-ruby-xmpfilter
-	url = https://github.com/t9md/vim-ruby-xmpfilter
+  path = bundle/vim-ruby-xmpfilter
+  url = https://github.com/t9md/vim-ruby-xmpfilter
   ignore=dirty
 [submodule "bundle/vim-rake"]
-	path = bundle/vim-rake
-	url = https://github.com/tpope/vim-rake
+  path = bundle/vim-rake
+  url = https://github.com/tpope/vim-rake
+  ignore=dirty
 [submodule "vimfiler.vim"]
-	path = bundle/vimfiler.vim
-	url = https://github.com/Shougo/vimfiler.vim
+  path = bundle/vimfiler.vim
+  url = https://github.com/Shougo/vimfiler.vim
+  ignore=dirty
 [submodule "bundle/vim-jsx"]
-	path = bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx
+  path = bundle/vim-jsx
+  url = https://github.com/mxw/vim-jsx
+  ignore=dirty
 [submodule "bundle/dockerfile.vim"]
-	path = bundle/dockerfile.vim
-	url = https://github.com/honza/dockerfile.vim
+  path = bundle/dockerfile.vim
+  url = https://github.com/honza/dockerfile.vim
+  ignore=dirty

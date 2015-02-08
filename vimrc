@@ -5,7 +5,7 @@ let g:maplocalleader = ","
 " Pathogen {{{
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off " Needed so pathogen also loads ftdetect plugins.
-call pathogen#incubate()
+call pathogen#infect('bundle/{}')
 call pathogen#helptags()
 " }}}
 
