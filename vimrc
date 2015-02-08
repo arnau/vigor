@@ -233,6 +233,8 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   set nohlsearch
 endif
 
+let g:javascript_enable_domhtmlcss = 1
+
 " Filetypes {{{
 if has("autocmd")
   augroup vimrc
