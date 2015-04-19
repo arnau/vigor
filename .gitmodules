@@ -158,3 +158,6 @@
   path = bundle/vim-javascript
   url = https://github.com/pangloss/vim-javascript.git
   ignore=dirty
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = https://github.com/cespare/vim-toml
