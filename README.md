@@ -75,6 +75,7 @@ If it's already installed you can update it running
 * [Stylus](http://learnboost.github.com/stylus/) : https://github.com/wavded/vim-stylus
 * [TOML](https://github.com/toml-lang/toml) : https://github.com/cespare/vim-toml
 * [n3](http://www.w3.org/TeamSubmission/n3/) : https://github.com/vim-scripts/n3.vim.git
+* [Nginx](http://nginx.org/) : https://github.com/evanmiller/nginx-vim-syntax
 
 
 ### Color schemes
