@@ -28,7 +28,6 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/tpope/vim-fugitive.git
 * https://github.com/vim-scripts/matchit.zip.git
 * https://github.com/tsaleh/vim-align.git
-* https://github.com/scrooloose/nerdcommenter.git
 * (?) https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
 
 

@@ -19,25 +19,20 @@ if has("autocmd")
     " TODO: use a remap
     "set foldmethod=syntax
 
-    " RDF Notation 3 Syntax
-    autocmd BufNewFile,BufRead *.n3,*.ttl,*.trig  setfiletype n3
-    autocmd BufNewFile,BufRead *.rq,*.sparql  setfiletype sparql
-    let g:NERDCustomDelimiters = {
-      \ 'n3': { 'left': '# ' },
-      \ 'ttl': { 'left': '# ' },
-      \ 'dockerfile': { 'left': '# ' },
-      \ 'sparql': { 'left': '# ' }
-    \ }
-
     function s:setupWrapping()
       set wrap
       set wrapmargin=2
       set textwidth=72
     endfunction
 
-    " Make sure all markdown files have the correct filetype set and setup wrapping
+    autocmd BufNewFile,BufRead *.n3,*.ttl,*.trig setfiletype n3
+    autocmd BufNewFile,BufRead *.rq,*.sparql setfiletype sparql
     autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
+
     autocmd FileType dockerfile set commentstring=#\ %s
+    autocmd FileType n3 set commentstring=#\ %s
+    autocmd FileType ttl set commentstring=#\ %s
+    autocmd FileType sparql set commentstring=#\ %s
 
     " Enable file type detection.
     " Use the default filetype settings, so that mail gets 'tw' set to 72,
