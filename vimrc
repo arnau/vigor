@@ -48,7 +48,7 @@ set list listchars=tab:→\ ,trail:\ ,eol:¬
 set wildmode=list:longest,list:full
 set complete=.,w,t
 set wildmenu
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*,*/tmp/*,.so,*.swp,*.zip
 " }}}
 " }}}
 
@@ -130,11 +130,6 @@ noremap <Leader>sp :split <C-R>=expand("%:p:h") . "/" <CR>
 " Opens a tab edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>te
 noremap <Leader>te :tabedit <C-R>=expand("%:p:h") . "/" <CR>
-
-" Inserts the path of the currently edited file into a command
-" Command mode: Ctrl+P
-cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
-
 
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
