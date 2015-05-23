@@ -1,12 +1,11 @@
-FROM debian:wheezy
+FROM debian:sid
 MAINTAINER Arnau Siches <asiches@gmail.com>
 
 RUN apt-get update -qq \
   && apt-get install -qqy \
     git \
     locales \
-    ruby \
-    ruby-dev \
+    build-essential \
     vim-nox \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* \

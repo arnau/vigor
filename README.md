@@ -49,7 +49,7 @@ If it's already installed you can update it running
 
 ### HTML
 
-* https://github.com/vim-scripts/Emmet.vim
+* https://github.com/vim-scripts/Emmet.vim (VimL)
 
 
 ### Ruby
