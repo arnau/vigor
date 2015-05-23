@@ -106,10 +106,6 @@
   path = bundle/vim-rake
   url = https://github.com/tpope/vim-rake
   ignore=dirty
-[submodule "vimfiler.vim"]
-  path = bundle/vimfiler.vim
-  url = https://github.com/Shougo/vimfiler.vim
-  ignore=dirty
 [submodule "bundle/vim-jsx"]
   path = bundle/vim-jsx
   url = https://github.com/mxw/vim-jsx
