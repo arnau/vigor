@@ -68,12 +68,13 @@ If it's already installed you can update it running
 * [Handlebars](http://handlebarsjs.com/) : https://github.com/mustache/vim-mustache-handlebars
 * [JSON](http://json.org/) : https://github.com/vim-scripts/JSON.vim
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript/) : https://github.com/pangloss/vim-javascript.git
+* [Markdown](http://daringfireball.net/projects/markdown/) : https://github.com/tpope/vim-markdown
 * [Puppet](https://puppetlabs.com/) : https://github.com/puppetlabs/puppet-syntax-vim
 * [R](http://www.r-project.org/) : https://github.com/vim-scripts/Vim-R-plugin.git
 * [SPARQL](http://www.w3.org/TR/sparql11-query/) : https://github.com/arnau/sparql.vim.git
 * [Stylus](http://learnboost.github.com/stylus/) : https://github.com/wavded/vim-stylus
+* [TOML](https://github.com/toml-lang/toml) : https://github.com/cespare/vim-toml
 * [n3](http://www.w3.org/TeamSubmission/n3/) : https://github.com/vim-scripts/n3.vim.git
-* [Markdown](http://daringfireball.net/projects/markdown/) : https://github.com/tpope/vim-markdown
 
 
 ### Color schemes
