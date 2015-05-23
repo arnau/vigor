@@ -134,3 +134,6 @@
   path = bundle/vim-projectionist
   url = https://github.com/tpope/vim-projectionist
   ignore=dirty
+[submodule "bundle/stonespoon"]
+	path = bundle/stonespoon
+	url = https://github.com/arnau/stonespoon.vim

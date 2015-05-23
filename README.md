@@ -81,6 +81,7 @@ If it's already installed you can update it running
 ### Color schemes
 
 * https://github.com/arnau/teaspoon.vim
+* https://github.com/arnau/stonespoon.vim
 
 
 ## Snippets
