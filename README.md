@@ -23,6 +23,10 @@ If it's already installed you can update it running
 
 http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 
+## Search
+
+* https://github.com/kien/ctrlp.vim.git
+
 ## Bundles
 
 * https://github.com/tpope/vim-fugitive.git
@@ -47,7 +51,6 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/Shougo/unite.vim.git
 * https://github.com/bling/vim-airline
 * https://github.com/airblade/vim-gitgutter
-* https://github.com/kien/ctrlp.vim.git
 * https://github.com/t9md/vim-ruby-xmpfilter
 * https://github.com/tpope/vim-rake
 * https://github.com/honza/dockerfile.vim
