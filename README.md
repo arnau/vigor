@@ -77,7 +77,7 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 
 * Reformat JSON
 
-    :%!python -m json.tool
+        :%!python -m json.tool
 
 
 ## Credits
