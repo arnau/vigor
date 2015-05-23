@@ -19,10 +19,6 @@ If it's already installed you can update it running
     $ cd ~/.vim
     $ ./vigor update
 
-## Some anti-patterns
-
-http://rbtnn.hateblo.jp/entry/2014/12/28/010913
-
 ## Bundles
 
 
@@ -91,8 +87,11 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
         :%!python -m json.tool
 
 
+## Some anti-patterns
+
+http://rbtnn.hateblo.jp/entry/2014/12/28/010913
+
+
 ## Credits
 
 Arnau Siches under MIT License.
-
-Vigor is based on Vim, Vam, Voom so thanks to Emili Pareño and his contributors.
