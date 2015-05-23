@@ -18,10 +18,6 @@
   path = bundle/supertab
   url = https://github.com/ervandew/supertab
   ignore=dirty
-[submodule "bundle/vim-endwise"]
-  path = bundle/vim-endwise
-  url = https://github.com/tpope/vim-endwise
-  ignore=dirty
 [submodule "bundle/n3"]
   path = bundle/n3
   url = https://github.com/vim-scripts/n3.vim.git
