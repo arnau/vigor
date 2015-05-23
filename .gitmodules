@@ -14,10 +14,6 @@
   path = bundle/nerdcommenter
   url = https://github.com/scrooloose/nerdcommenter.git
   ignore=dirty
-[submodule "bundle/supertab"]
-  path = bundle/supertab
-  url = https://github.com/ervandew/supertab
-  ignore=dirty
 [submodule "bundle/n3"]
   path = bundle/n3
   url = https://github.com/vim-scripts/n3.vim.git
