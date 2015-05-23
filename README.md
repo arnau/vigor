@@ -31,7 +31,6 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/scrooloose/nerdcommenter.git
 * https://github.com/ervandew/supertab
 * https://github.com/tpope/vim-endwise
-* https://github.com/Raimondi/delimitMate
 * (?) https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
 
 
