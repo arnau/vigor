@@ -156,11 +156,6 @@ let g:user_emmet_settings = {
 \}
 " }}}
 
-" R {{{
-let g:vimrplugin_vsplit = 1
-let g:ScreenImpl = 'Tmux'
-" }}}
-
 
 let g:ragtag_global_maps = 1
 
