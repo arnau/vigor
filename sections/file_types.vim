@@ -31,7 +31,6 @@ if has("autocmd")
 
     autocmd FileType dockerfile set commentstring=#\ %s
     autocmd FileType n3 set commentstring=#\ %s
-    autocmd FileType ttl set commentstring=#\ %s
     autocmd FileType sparql set commentstring=#\ %s
 
     " Enable file type detection.

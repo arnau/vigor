@@ -6,10 +6,6 @@
   path = bundle/matchit
   url = https://github.com/vim-scripts/matchit.zip.git
   ignore=dirty
-[submodule "bundle/vim-align"]
-  path = bundle/vim-align
-  url = https://github.com/tsaleh/vim-align.git
-  ignore=dirty
 [submodule "bundle/n3"]
   path = bundle/n3
   url = https://github.com/vim-scripts/n3.vim.git
