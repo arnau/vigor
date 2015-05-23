@@ -25,8 +25,6 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 
 ### Bundles
 
-* https://github.com/tpope/vim-fugitive.git
-* https://github.com/vim-scripts/matchit.zip.git
 * (?) https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
 
 
@@ -39,6 +37,7 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/tpope/vim-repeat.git (VimL)
 * https://github.com/tpope/vim-surround.git (VimL)
 * https://github.com/tpope/vim-tbone.git (VimL)
+* https://github.com/vim-scripts/matchit.zip.git (VimL)
 
 
 ### Contextual helpers
