@@ -52,22 +52,22 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/airblade/vim-gitgutter
 * https://github.com/t9md/vim-ruby-xmpfilter
 * https://github.com/tpope/vim-rake
-* https://github.com/honza/dockerfile.vim
 
 ### Syntaxes
 
-* [R](http://www.r-project.org/) : https://github.com/vim-scripts/Vim-R-plugin.git
+* [CSS](http://www.w3.org/TR/CSS/) : https://github.com/lepture/vim-css
+* [CoffeeScript](http://coffeescript.org/) : https://github.com/kchmck/vim-coffee-script.git
+* [Docker](https://www.docker.com/) https://github.com/honza/dockerfile.vim
 * [Erlang](http://www.erlang.org/) : https://github.com/oscarh/vimerl.git
 * [Go](https://golang.org/) : https://github.com/jnwhiteh/vim-golang
-* [Javascript](https://en.wikipedia.org/wiki/JavaScript/) : https://github.com/pangloss/vim-javascript.git
-* [CoffeeScript](http://coffeescript.org/) : https://github.com/kchmck/vim-coffee-script.git
-* [n3](http://www.w3.org/TeamSubmission/n3/) : https://github.com/vim-scripts/n3.vim.git
-* [SPARQL](http://www.w3.org/TR/sparql11-query/) : https://github.com/arnau/sparql.vim.git
-* [Puppet](https://puppetlabs.com/) : https://github.com/puppetlabs/puppet-syntax-vim
-* [JSON](http://json.org/) : https://github.com/vim-scripts/JSON.vim
-* [Stylus](http://learnboost.github.com/stylus/) : https://github.com/wavded/vim-stylus
-* [CSS](http://www.w3.org/TR/CSS/) : https://github.com/lepture/vim-css
 * [Handlebars](http://handlebarsjs.com/) : https://github.com/mustache/vim-mustache-handlebars
+* [JSON](http://json.org/) : https://github.com/vim-scripts/JSON.vim
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript/) : https://github.com/pangloss/vim-javascript.git
+* [Puppet](https://puppetlabs.com/) : https://github.com/puppetlabs/puppet-syntax-vim
+* [R](http://www.r-project.org/) : https://github.com/vim-scripts/Vim-R-plugin.git
+* [SPARQL](http://www.w3.org/TR/sparql11-query/) : https://github.com/arnau/sparql.vim.git
+* [Stylus](http://learnboost.github.com/stylus/) : https://github.com/wavded/vim-stylus
+* [n3](http://www.w3.org/TeamSubmission/n3/) : https://github.com/vim-scripts/n3.vim.git
 
 ### Color schemes
 
@@ -85,4 +85,3 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 Arnau Siches under MIT License.
 
 Vigor is based on Vim, Vam, Voom so thanks to Emili Pareño and his contributors.
-
