@@ -53,10 +53,6 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,
 " }}}
 
 
-" Save as root {{{
-cnoremap w!! w !sudo tee % >/dev/null<CR>:e!<CR><CR>
-" }}}
-
 " Backup {{{
 set nobackup
 set nowritebackup
