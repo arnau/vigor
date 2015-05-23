@@ -135,5 +135,6 @@
   url = https://github.com/tpope/vim-projectionist
   ignore=dirty
 [submodule "bundle/stonespoon"]
-	path = bundle/stonespoon
-	url = https://github.com/arnau/stonespoon.vim
+  path = bundle/stonespoon
+  url = https://github.com/arnau/stonespoon.vim
+  ignore=dirty
