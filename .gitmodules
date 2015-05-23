@@ -34,10 +34,6 @@
   path = bundle/vim-r-plugin
   url = https://github.com/vim-scripts/Vim-R-plugin.git
   ignore=dirty
-[submodule "bundle/vim-screen"]
-  path = bundle/vim-screen
-  url = https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
-  ignore=dirty
 [submodule "bundle/puppet-syntax-vim"]
   path = bundle/puppet-syntax-vim
   url = https://github.com/puppetlabs/puppet-syntax-vim

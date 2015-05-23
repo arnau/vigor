@@ -23,9 +23,7 @@ If it's already installed you can update it running
 
 http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 
-### Bundles
-
-* (?) https://github.com/vim-scripts/Screen-vim---gnu-screentmux.git
+## Bundles
 
 
 ### Helpers
