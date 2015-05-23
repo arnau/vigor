@@ -48,8 +48,14 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * http://github.com/Shougo/vimproc.git
 * https://github.com/Shougo/vimshell.vim.git
 * https://github.com/Shougo/unite.vim.git
+
+### Contextual information
+
 * https://github.com/bling/vim-airline
 * https://github.com/airblade/vim-gitgutter
+
+### Ruby
+
 * https://github.com/tpope/vim-rake
 * https://github.com/tpope/vim-projectionist
 
