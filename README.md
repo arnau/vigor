@@ -52,6 +52,7 @@ http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 * https://github.com/airblade/vim-gitgutter
 * https://github.com/t9md/vim-ruby-xmpfilter
 * https://github.com/tpope/vim-rake
+* https://github.com/tpope/vim-projectionist
 
 ### Syntaxes
 

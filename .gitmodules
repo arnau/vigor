@@ -170,3 +170,6 @@
 [submodule "bundle/vim-css"]
 	path = bundle/vim-css
 	url = https://github.com/lepture/vim-css
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist
