@@ -222,36 +222,6 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown | call s:setupWrapping()
     autocmd FileType dockerfile set commentstring=#\ %s
 
-    " ruby-xmpfilter {{{
-    autocmd FileType ruby nmap <buffer> <C-m> <Plug>(xmpfilter-mark)
-    autocmd FileType ruby xmap <buffer> <C-m> <Plug>(xmpfilter-mark)
-    autocmd FileType ruby imap <buffer> <C-m> <Plug>(xmpfilter-mark)
-
-    autocmd FileType ruby nmap <buffer> <C-r> <Plug>(xmpfilter-run)
-    autocmd FileType ruby xmap <buffer> <C-r> <Plug>(xmpfilter-run)
-    autocmd FileType ruby imap <buffer> <C-r> <Plug>(xmpfilter-run)
-
-    let g:xmpfilter_cmd = "seeing_is_believing"
-
-    autocmd FileType ruby nmap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
-    autocmd FileType ruby xmap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
-    autocmd FileType ruby imap <buffer> <C-m> <Plug>(seeing_is_believing-mark)
-
-    autocmd FileType ruby nmap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
-    autocmd FileType ruby xmap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
-    autocmd FileType ruby imap <buffer> <C-c> <Plug>(seeing_is_believing-clean)
-
-    " xmpfilter compatible
-    autocmd FileType ruby nmap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
-    autocmd FileType ruby xmap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
-    autocmd FileType ruby imap <buffer> <C-r> <Plug>(seeing_is_believing-run_-x)
-
-    " auto insert mark at appropriate spot.
-    autocmd FileType ruby nmap <buffer> <F4> <Plug>(seeing_is_believing-run)
-    autocmd FileType ruby xmap <buffer> <F4> <Plug>(seeing_is_believing-run)
-    autocmd FileType ruby imap <buffer> <F4> <Plug>(seeing_is_believing-run)
-    " }}}
-
     " Enable file type detection.
     " Use the default filetype settings, so that mail gets 'tw' set to 72,
     " 'cindent' is on in C files, etc.
