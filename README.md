@@ -73,6 +73,7 @@ If it's already installed you can update it running
 * [SPARQL](http://www.w3.org/TR/sparql11-query/) : https://github.com/arnau/sparql.vim.git
 * [Stylus](http://learnboost.github.com/stylus/) : https://github.com/wavded/vim-stylus
 * [n3](http://www.w3.org/TeamSubmission/n3/) : https://github.com/vim-scripts/n3.vim.git
+* [Markdown](http://daringfireball.net/projects/markdown/) : https://github.com/tpope/vim-markdown
 
 
 ### Color schemes
