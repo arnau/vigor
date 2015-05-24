@@ -130,3 +130,7 @@
   path = bundle/stonespoon
   url = https://github.com/arnau/stonespoon.vim
   ignore=dirty
+[submodule "bundle/vim-rlang"]
+  path = bundle/vim-rlang
+  url = https://github.com/arnau/vim-rlang
+  ignore=dirty
