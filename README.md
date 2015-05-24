@@ -8,7 +8,7 @@ Use the dockerized version:
 
     $ docker run --rm -it -v /var/foo:/var/foo -w /var/foo arnau/vigor
 
-First, clone the repository.
+Or the manual way: Clone the repository.
 
     $ git clone git://github.com/arnau/Vigor.git ~/.vim
     $ cd ~/.vim
