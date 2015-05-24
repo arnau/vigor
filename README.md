@@ -6,7 +6,7 @@ Vigor is Arnau Siches' Vim Playground.
 
 Use the dockerized version:
 
-    $ docker run --rm -it -v /var/foo:/var/foo -w /var/foo
+    $ docker run --rm -it -v /var/foo:/var/foo -w /var/foo arnau/vigor
 
 First, clone the repository.
 
