@@ -16,7 +16,8 @@ set ruler
 set paste
 set encoding=utf-8
 scriptencoding utf-8
-set autoindent " always set autoindenting on
+set autoindent
+set smartindent
 set autoread " update a open file edited outside of Vim
 set ttimeoutlen=50
 set colorcolumn=80
@@ -28,7 +29,6 @@ set smartcase
 
 set ttyfast
 
-""some stuff to get the mouse going in term
 set mouse=a
 set ttymouse=xterm
 
@@ -49,6 +49,8 @@ set wildmode=list:longest,list:full
 set complete=.,w,t
 set wildmenu
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.jpg,*.png,*.ttf,*.doc,*.pdf,*.gif,*.gz,vendor/gems/*,*/tmp/*,.so,*.swp,*.zip
+" set omnifunc=on
+" set completeopt=menu,preview
 " }}}
 " }}}
 
