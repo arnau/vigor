@@ -83,8 +83,6 @@ set statusline=%f
 set statusline+=%y
 " Encoding
 set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\"}
-" Git branch
-set statusline+=%{fugitive#statusline()}
 " Modified flag
 set statusline+=%m
 " Left/right separator
