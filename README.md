@@ -25,6 +25,7 @@ If it's already installed you can update it running
 ### Helpers
 
 * http://github.com/Shougo/vimproc.git (VimL, C)
+* https://github.com/Shougo/unite.vim.git (VimL)
 * https://github.com/Shougo/vimshell.vim.git (VimL)
 * https://github.com/tpope/vim-commentary (VimL)
 * https://github.com/tpope/vim-pathogen.git (VimL)
@@ -33,18 +34,11 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-tbone.git (VimL)
 * https://github.com/vim-scripts/matchit.zip.git (VimL)
 
-
 ### Contextual helpers
 
 * https://github.com/airblade/vim-gitgutter (VimL)
 * https://github.com/bling/vim-airline (VimL)
 * https://github.com/editorconfig/editorconfig-vim.git (VimL, C, Python, Ruby)
-
-
-### Search
-
-* https://github.com/kien/ctrlp.vim.git (VimL)
-* https://github.com/Shougo/unite.vim.git (VimL)
 
 
 ### HTML
