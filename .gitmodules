@@ -30,10 +30,6 @@
   path = bundle/vim-coffe-script
   url = https://github.com/kchmck/vim-coffee-script.git
   ignore=dirty
-[submodule "bundle/vim-r-plugin"]
-  path = bundle/vim-r-plugin
-  url = https://github.com/vim-scripts/Vim-R-plugin.git
-  ignore=dirty
 [submodule "bundle/puppet-syntax-vim"]
   path = bundle/puppet-syntax-vim
   url = https://github.com/puppetlabs/puppet-syntax-vim
