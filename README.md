@@ -39,6 +39,7 @@ If it's already installed you can update it running
 * https://github.com/airblade/vim-gitgutter (VimL)
 * https://github.com/bling/vim-airline (VimL)
 * https://github.com/editorconfig/editorconfig-vim.git (VimL, C, Python, Ruby)
+* https://github.com/kshenoy/vim-signature (VimL)
 
 
 ### HTML
