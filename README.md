@@ -91,11 +91,11 @@ If it's already installed you can update it running
         :%!python -m json.tool
 
 
-## Some anti-patterns
+## Anti-patterns
 
-http://rbtnn.hateblo.jp/entry/2014/12/28/010913
+* http://rbtnn.hateblo.jp/entry/2014/12/28/010913
 
 
-## Credits
+## License
 
-Arnau Siches under MIT License.
+This is free and unencumbered public domain software. For more information, see http://unlicense.org/ or the accompanying UNLICENSE file.
