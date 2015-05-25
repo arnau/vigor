@@ -134,3 +134,6 @@
   path = bundle/vim-signature
   url = https://github.com/kshenoy/vim-signature
   ignore=dirty
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate

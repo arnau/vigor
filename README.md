@@ -33,6 +33,7 @@ If it's already installed you can update it running
 * https://github.com/tpope/vim-surround.git (VimL)
 * https://github.com/tpope/vim-tbone.git (VimL)
 * https://github.com/vim-scripts/matchit.zip.git (VimL)
+* https://github.com/Raimondi/delimitMate (VimL)
 
 ### Contextual helpers
 
