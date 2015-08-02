@@ -10,6 +10,7 @@ call pathogen#helptags()
 " }}}
 
 set number
+set relativenumber
 set cursorline
 set visualbell t_vb=
 set ruler
