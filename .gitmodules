@@ -137,6 +137,3 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate
-[submodule "bundle/copy-cut-paste.vim"]
-	path = bundle/copy-cut-paste.vim
-	url = https://github.com/NLKNguyen/copy-cut-paste.vim.git
