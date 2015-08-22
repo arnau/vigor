@@ -12,12 +12,12 @@ Or the manual way: Clone the repository.
 
     $ git clone git://github.com/arnau/Vigor.git ~/.vim
     $ cd ~/.vim
-    $ ./vigor install
+    $ make install
 
 If it's already installed you can update it running
 
     $ cd ~/.vim
-    $ ./vigor update
+    $ make update
 
 ## Bundles
 

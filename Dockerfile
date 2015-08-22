@@ -16,7 +16,7 @@ ENV TERM screen-256color
 
 COPY . /root/.vim/
 WORKDIR /root/.vim
-RUN ./vigor install \
+RUN make install \
   && find . -name .git | xargs rm -rf
 
 CMD ["vim"]
