@@ -131,6 +131,13 @@ noremap <Leader>te :tabedit <C-R>=expand("%:p:h") . "/" <CR>
 " Hitting F5 will clean out all trailing whitespace or tabs
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
 
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+
 " switch off F1
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
