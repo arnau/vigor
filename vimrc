@@ -22,6 +22,7 @@ set smartindent
 set autoread " update a open file edited outside of Vim
 set ttimeoutlen=50
 set colorcolumn=80
+set textwidth=80
 
 " Display incomplete commands
 set showcmd
