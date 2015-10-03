@@ -22,7 +22,7 @@ set smartindent
 set autoread " update a open file edited outside of Vim
 set ttimeoutlen=50
 set colorcolumn=80
-set textwidth=80
+set textwidth=79
 
 " Display incomplete commands
 set showcmd
@@ -114,6 +114,8 @@ set hlsearch
 " }}}
 
 " Mappings {{{
+
+noremap <Leader>fm gqap
 
 " Keep visual mode after indenting
 vnoremap < <gv
