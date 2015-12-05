@@ -143,3 +143,6 @@
 [submodule "bundle/vim-swift"]
 	path = bundle/vim-swift
 	url = https://github.com/toyamarinyon/vim-swift
+[submodule "bundle/purescript-vim"]
+	path = bundle/purescript-vim
+	url = https://github.com/raichoo/purescript-vim
