@@ -140,3 +140,6 @@
 [submodule "bundle/julia-vim"]
 	path = bundle/julia-vim
 	url = https://github.com/JuliaLang/julia-vim.git
+[submodule "bundle/vim-swift"]
+	path = bundle/vim-swift
+	url = https://github.com/toyamarinyon/vim-swift
