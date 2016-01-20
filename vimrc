@@ -176,6 +176,12 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 let g:javascript_enable_domhtmlcss = 1
+let g:solarized_termcolors=256
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Filetypes
 source ~/.vim/sections/file_types.vim

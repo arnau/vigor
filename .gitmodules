@@ -140,9 +140,18 @@
 [submodule "bundle/julia-vim"]
 	path = bundle/julia-vim
 	url = https://github.com/JuliaLang/julia-vim.git
-[submodule "bundle/vim-swift"]
-	path = bundle/vim-swift
-	url = https://github.com/toyamarinyon/vim-swift
 [submodule "bundle/purescript-vim"]
 	path = bundle/purescript-vim
 	url = https://github.com/raichoo/purescript-vim
+[submodule "bundle/onedark.vim"]
+	path = bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/vim-swift"]
+  path = bundle/vim-swift
+  url = https://github.com/kballard/vim-swift
