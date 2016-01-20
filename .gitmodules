@@ -161,3 +161,7 @@
   path = bundle/vim-swift
   url = https://github.com/kballard/vim-swift
   ignore=dirty
+[submodule "bundle/rust.vim"]
+  path = bundle/rust.vim
+  url = https://github.com/rust-lang/rust.vim
+  ignore= dirty
