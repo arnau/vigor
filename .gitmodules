@@ -165,3 +165,6 @@
   path = bundle/rust.vim
   url = https://github.com/rust-lang/rust.vim
   ignore= dirty
+[submodule "bundle/merlin"]
+	path = bundle/merlin
+	url = https://github.com/the-lambda-church/merlin
