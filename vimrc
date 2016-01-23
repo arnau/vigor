@@ -75,7 +75,8 @@ set history=50
 set guifont=Menlo:h12
 set t_Co=256
 set background=dark
-colorscheme stonespoon
+" colorscheme stonespoon
+colorscheme Tomorrow-Night
 
 " }}}
 
