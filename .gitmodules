@@ -168,3 +168,6 @@
 [submodule "bundle/merlin"]
 	path = bundle/merlin
 	url = https://github.com/the-lambda-church/merlin
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
