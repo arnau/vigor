@@ -2,6 +2,7 @@
 let g:airline_theme = 'powerlineish'
 
 let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#hunks#enabled = 0
 
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#trailing_format = 't %s'
