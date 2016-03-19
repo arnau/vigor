@@ -190,3 +190,6 @@ nnoremap <LocalLeader>t :MerlinTypeOf
 
 " Filetypes
 source ~/.vim/sections/file_types.vim
+
+set hidden
+let g:racer_cmd = $RUST_PATH . "/racer"

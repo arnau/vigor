@@ -174,3 +174,6 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim
+[submodule "bundle/vim-racer"]
+	path = bundle/vim-racer
+	url = https://github.com/racer-rust/vim-racer
