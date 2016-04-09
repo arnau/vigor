@@ -168,12 +168,20 @@
 [submodule "bundle/merlin"]
 	path = bundle/merlin
 	url = https://github.com/the-lambda-church/merlin
+	ignore = dirty
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir
+	ignore = dirty
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim
+	ignore = dirty
 [submodule "bundle/vim-racer"]
 	path = bundle/vim-racer
 	url = https://github.com/racer-rust/vim-racer
+	ignore = dirty
+[submodule "bundle/elm.vim"]
+	path = bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim
+	ignore = dirty
