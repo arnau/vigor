@@ -1,6 +1,6 @@
 install:
 	git submodule update --init --recursive --rebase
-	ln -s ~/.vim/vimrc ~/.vimrc
+	ln -sfn ~/.vim/vimrc ~/.vimrc
 	cd bundle/vimproc && make
 
 update:
