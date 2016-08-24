@@ -193,3 +193,9 @@ source ~/.vim/sections/file_types.vim
 
 set hidden
 let g:racer_cmd = $RUST_PATH . "/racer"
+
+let g:syntastic_python_python_exec = '/usr/local/bin/python3'
+" let g:syntastic_python_checkers = ['pylint']
+
+let g:elm_format_autosave = 1
+let g:elm_setup_keybindings = 0
