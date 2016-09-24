@@ -8,6 +8,11 @@ update:
 	git submodule update --init --recursive --rebase
 	cd bundle/vimproc && make
 
+pull:
+	git submodule foreach git pull origin master
+	cd bundle/vimproc && make
+
+
 rm-bundle:
 	git submodule deinit -f $(BUNDLE)
 	git rm -f $(BUNDLE)

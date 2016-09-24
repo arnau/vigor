@@ -11,12 +11,13 @@ let g:unite_source_rec_max_cache_files = 50000
 let g:unite_source_tab_time_format = '(%Y-%m-%dT%H:%M:%S) '
 
 if executable('ag')
+  let g:unite_source_rec_async_command = 'ag -i --nocolor --nogroup --ignore ".hg" --ignore ".git" -g ""'
   let g:unite_source_grep_command = 'ag'
-  let g:unite_source_grep_default_opts = '-i --line-numbers --nocolor --nogroup --hidden ' .
-    \  '--ignore ''.hg'' --ignore ''.svn'' --ignore ''*.sock'' --ignore ''tmp'' --ignore ''target'' --ignore ''.git'''
-  let g:unite_source_rec_async_command='ag -i --nocolor --nogroup --ignore "tmp" --ignore "target" --ignore ".hg" --ignore ".svn" --ignore ".git" --ignore ".bzr" --hidden -g ""'
+  let g:unite_source_grep_default_opts    = '-i --nocolor --nogroup --ignore ".hg" --ignore ".git" --line-numbers'
+  " let g:unite_source_grep_recursive_opt = ''
 endif
 
+" let g:unite_ignore_source_files = ['elm-stuff']
 
 " Menu
 nnoremap <Leader>u :Unite -start-insert<CR>
@@ -24,7 +25,7 @@ nnoremap <Leader>u :Unite -start-insert<CR>
 nnoremap <Leader>a :Unite -buffer-name=files file buffer tab<CR>
 " ctrl-p like
 nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
-nnoremap <Leader>ff :Unite -start-insert -force-redraw file_rec/async:!<CR>
+nnoremap <Leader>g :Unite file_rec/git:--cached:--others:--exclude-standard
 " Buffers
 nnoremap <Leader>b :Unite buffer<CR>
 " Search

@@ -8,12 +8,16 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#whitespace#trailing_format = 't %s'
 let g:airline#extensions#whitespace#mixed_indent_format = 'm %s'
 
-let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#buffer_min_count = 0
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#close_symbol = ''
 
 let g:airline#extensions#bufferline#enabled = 0
+
+let g:airline#extensions#tmuxline#enabled = 0
 
 let g:airline_detect_paste = 0
 let g:airline_detect_modified = 1
