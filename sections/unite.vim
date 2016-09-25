@@ -17,21 +17,26 @@ if executable('ag')
   " let g:unite_source_grep_recursive_opt = ''
 endif
 
-" let g:unite_ignore_source_files = ['elm-stuff']
+let g:unite_ignore_source_files = ['elm-stuff']
 
 " Menu
 nnoremap <Leader>u :Unite -start-insert<CR>
+
 " All
 nnoremap <Leader>a :Unite -buffer-name=files file buffer tab<CR>
-" ctrl-p like
-nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
-nnoremap <Leader>g :Unite file_rec/git:--cached:--others:--exclude-standard
+
+" nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
+nnoremap <Leader>f :Unite -start-insert file_rec/git:--cached:--others:--exclude-standard<CR>
+
 " Buffers
 nnoremap <Leader>b :Unite buffer<CR>
+
 " Search
 nnoremap <Leader>s :Unite grep:.<CR>
+
 " Yankring
 nnoremap <Leader>y :<C-u>Unite history/yank<CR>
+
 " Tasks
 nnoremap <Leader>t :Unite -toggle
   \ grep:.::FIXME\|TODO\|NOTE\|XXX<CR>
