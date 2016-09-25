@@ -107,4 +107,6 @@ vmap <Leader>P "+P
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
+nnoremap <Leader>gg :GitGutter<CR>
 " }}}
