@@ -1,11 +1,15 @@
-let g:airline_theme = 'tomorrow'
+let g:airline_theme = 'distinguished'
+" let g:airline_theme = 'lucius'
+" let g:airline_theme = 'ravenpower'
 
 let g:airline_detect_paste = 0
 let g:airline_detect_modified = 1
 let g:airline_powerline_fonts = 0
 let g:airline_skip_empty_sections = 1
 let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 let g:airline_mode_map = {
   \ '__' : '-',
