@@ -18,13 +18,6 @@ cd ~/.vim
 make install
 ```
 
-If it's already installed you can update it running
-
-```sh
-cd ~/.vim
-make update
-```
-
 ## Anti-patterns
 
 * http://rbtnn.hateblo.jp/entry/2014/12/28/010913
