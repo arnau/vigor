@@ -1,12 +1,13 @@
 let g:maplocalleader = ","
 
 " Colors and Fonts
-set guifont=Menlo:h12
-set t_Co=256
-set background=dark
-colorscheme stonespoon
-" colorscheme Tomorrow-Night
-" colorscheme atom-dark-256
+" set t_Co=256
+set termguicolors
+" set background=dark
+" colorscheme stonespoon
+" colorscheme zazen
+colorscheme tenderspoon
+" colorscheme tender
 
 " colorscheme onedark
 " let g:onedark_termcolors=256
@@ -42,6 +43,7 @@ set linespace=1
 
 " Display extra whitespace
 set list listchars=tab:→\ ,trail:\ ,eol:¬
+set showbreak=··
 
 " Tab completion
 set wildmode=list:longest,list:full

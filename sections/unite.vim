@@ -15,6 +15,7 @@ if executable('ag')
   \ ['ag', '-i',
   \        '--nocolor',
   \        '--nogroup',
+  \        '--depth', '10',
   \        '--follow',
   \        '--ignore', '.hg',
   \        '--ignore', '.git',
@@ -32,11 +33,13 @@ nnoremap <Leader>u :Unite -start-insert<CR>
 " All
 nnoremap <Leader>a :Unite -buffer-name=files file buffer tab<CR>
 
-nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
+" nnoremap <Leader>f :Unite -start-insert file_rec/async:!<CR>
+nnoremap <LocalLeader>f :Files <CR>
 nnoremap <Leader>g :Unite -start-insert file_rec/git:--cached:--others:--exclude-standard<CR>
 
 " Buffers
-nnoremap <Leader>b :Unite buffer<CR>
+" nnoremap <Leader>b :Unite buffer<CR>
+nnoremap <LocalLeader>b :Buffers<CR>
 
 " Search
 nnoremap <Leader>s :Unite grep:.<CR>

@@ -6,19 +6,23 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 " Helpers {{{
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/vimshell.vim'
-Plug 'Shougo/unite.vim'
+" Plug 'Shougo/unite.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
+Plug 'junegunn/vim-easy-align'
+Plug 'w0rp/ale'
 " }}}
+
 
 " Context {{{
 Plug 'airblade/vim-gitgutter' | Plug 'kshenoy/vim-signature'
 Plug 'bling/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'kien/rainbow_parentheses.vim'
+let g:polyglot_disabled = ['rust']
+Plug 'ap/vim-css-color'
 " }}}
 
 " Colorschemes {{{
@@ -28,6 +32,14 @@ Plug 'arnau/stonespoon.vim'
 Plug 'chriskempson/tomorrow-theme', { 'rtp': '/vim'}
 Plug 'joshdick/onedark.vim'
 Plug 'gosukiwi/vim-atom-dark'
+Plug 'tomasr/molokai'
+Plug 'vim-scripts/Wombat'
+Plug 'zaki/zazen'
+Plug 'kamwitsta/mythos'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'xero/blaquemagick.vim'
+Plug 'jacoborus/tender.vim'
+Plug 'zanglg/nova.vim'
 " }}}
 
 " Languages {{{
@@ -61,15 +73,11 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
-Plug 'JulesWang/css.vim'
-
 Plug 'fatih/vim-go'
 
 Plug 'docker/docker' , { 'rtp': '/contrib/syntax/vim' }
 
 Plug 'pangloss/vim-javascript'
-
-Plug 'arnau/vim-rlang'
 
 Plug 'arnau/sparql.vim'
 
@@ -91,20 +99,23 @@ Plug 'elixir-lang/vim-elixir'
 
 Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
 
-Plug 'keith/swift.vim', { 'for': 'swift' }
-
 Plug 'raichoo/purescript-vim'
 " }}}
 
 call plug#end()
 
+" set termguicolors
+set t_8f=[38;2;%lu;%lu;%lum
+set t_8b=[48;2;%lu;%lu;%lum
 
 source ~/.vim/sections/basics.vim
 source ~/.vim/sections/file_types.vim
 source ~/.vim/sections/gitgutter.vim
 source ~/.vim/sections/limelight.vim
 source ~/.vim/sections/airline.vim
-source ~/.vim/sections/unite.vim
+" source ~/.vim/sections/unite.vim
+source ~/.vim/sections/fzf.vim
+source ~/.vim/sections/ale.vim
 
 
 " Signature {{{

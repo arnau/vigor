@@ -3,3 +3,4 @@ tags
 view
 tmp
 plugged
+autoload/plug.vim.old
