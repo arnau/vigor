@@ -2,7 +2,8 @@ set nocompatible
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " Helpers {{{
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/vimshell.vim'
