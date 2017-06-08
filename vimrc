@@ -98,7 +98,8 @@ Plug 'lambdatoast/elm.vim'
 
 Plug 'elixir-lang/vim-elixir'
 
-Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
+" Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
+" Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
 
 Plug 'raichoo/purescript-vim'
 " }}}
@@ -110,13 +111,13 @@ set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 
 source ~/.vim/sections/basics.vim
-source ~/.vim/sections/file_types.vim
 source ~/.vim/sections/gitgutter.vim
 source ~/.vim/sections/limelight.vim
 source ~/.vim/sections/airline.vim
 " source ~/.vim/sections/unite.vim
 source ~/.vim/sections/fzf.vim
 source ~/.vim/sections/ale.vim
+source ~/.vim/sections/file_types.vim
 
 
 " Signature {{{

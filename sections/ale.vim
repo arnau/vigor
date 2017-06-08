@@ -25,3 +25,10 @@ let g:ale_linters = {
 \   'text': [],
 \   'vim': [],
 \}
+
+" OCaml
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+" set rtp+=/usr/local/share/ocamlmerlin/vim
+let g:syntastic_ocaml_checkers = ['merlin']
+nnoremap <LocalLeader>t :MerlinTypeOf

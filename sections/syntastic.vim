@@ -4,11 +4,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 
-" OCaml
-set rtp+=/usr/local/share/ocamlmerlin/vim
-let g:syntastic_ocaml_checkers = ['merlin']
-nnoremap <LocalLeader>t :MerlinTypeOf
-
 
 " Rust
 set hidden
