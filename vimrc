@@ -22,7 +22,7 @@ Plug 'airblade/vim-gitgutter' | Plug 'kshenoy/vim-signature'
 Plug 'bling/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['rust']
+let g:polyglot_disabled = ['rust', 'elm']
 Plug 'ap/vim-css-color'
 " }}}
 
@@ -93,8 +93,8 @@ Plug 'JuliaLang/julia-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
-" Plug 'elmcast/elm-vim'
-Plug 'lambdatoast/elm.vim'
+Plug 'elmcast/elm-vim'
+" Plug 'lambdatoast/elm.vim'
 
 Plug 'elixir-lang/vim-elixir'
 
@@ -103,6 +103,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'reasonml/vim-reason'
 
 Plug 'raichoo/purescript-vim'
+
+Plug 'Quramy/tsuquyomi'
 " }}}
 
 call plug#end()
