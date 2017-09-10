@@ -80,6 +80,8 @@ Plug 'docker/docker' , { 'rtp': '/contrib/syntax/vim' }
 
 Plug 'pangloss/vim-javascript'
 
+Plug 'flowtype/vim-flow'
+
 Plug 'arnau/sparql.vim'
 
 Plug 'cespare/vim-toml'
