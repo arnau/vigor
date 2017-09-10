@@ -15,10 +15,10 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 " let g:ale_open_list = 1
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers = {
+\    'javascript': ['prettier_eslint', 'eslint'],
+\}
 let g:ale_fix_on_save = 1
-" let g:ale_javascript_prettier_options = '--single-quote --trailing-comma es5'
 
 " Pick and choose linters
 " \   'javascript': ['eslint', 'prettier-eslint'],
