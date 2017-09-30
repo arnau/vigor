@@ -15,19 +15,32 @@ colorscheme tenderspoon
 set number
 set relativenumber
 set cursorline
-set visualbell t_vb=
 set paste
 set encoding=utf-8
 scriptencoding utf-8
-set smartindent
 set colorcolumn=80
 set textwidth=78
+
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+set autoindent
+set smartindent
+
+set undofile                " Save undos after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
 
 " Display incomplete commands
 set showcmd
 set ignorecase
 set smartcase
 
+set lazyredraw
 set ttyfast
 
 set mouse=a

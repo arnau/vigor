@@ -20,6 +20,8 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 
+let g:ale_ruby_rubocop_executable = 'bundle exec rubocop'
+
 " Pick and choose linters
 " \   'javascript': ['eslint', 'prettier-eslint'],
 let g:ale_linters = {
