@@ -7,7 +7,6 @@ Plug 'junegunn/fzf.vim'
 
 " Helpers {{{
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/vimshell.vim'
-" Plug 'Shougo/unite.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -18,11 +17,11 @@ Plug 'w0rp/ale'
 
 
 " Context {{{
-Plug 'airblade/vim-gitgutter' | Plug 'kshenoy/vim-signature'
-Plug 'bling/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'kshenoy/vim-signature'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'sheerun/vim-polyglot'
-let g:polyglot_disabled = ['rust', 'elm']
 Plug 'ap/vim-css-color'
 " }}}
 
@@ -45,6 +44,10 @@ Plug 'zanglg/nova.vim'
 
 " Languages {{{
 "Plug 'vim-scripts/Emmet.vim'
+
+Plug 'elmcast/elm-vim'
+Plug 'sheerun/vim-polyglot'
+let g:polyglot_disabled = ['rust', 'elm']
 
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 function! s:goyo_enter()
@@ -95,8 +98,6 @@ Plug 'JuliaLang/julia-vim'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
-Plug 'elmcast/elm-vim'
-" Plug 'lambdatoast/elm.vim'
 
 Plug 'elixir-lang/vim-elixir'
 
