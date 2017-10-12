@@ -29,7 +29,4 @@ let g:ale_linters = {
 \   'rust': ['cargo'],
 \   'swift': ['swiftlint'],
 \   'python': ['flake8', 'pylint'],
-\   'text': [],
-\   'vim': [],
 \}
-" \   'ocaml': [],
