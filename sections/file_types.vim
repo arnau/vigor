@@ -12,14 +12,16 @@ augroup vimrc
   " Save and load folds
   autocmd BufWinLeave * silent! mkview
   autocmd BufWinEnter * silent! loadview
+  autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
 augroup filetypedetect
-  autocmd! BufNewFile,BufRead *.{rdf,rdfs,owl} setfiletype xml
-  autocmd! BufNewFile,BufRead *.{n3,ttl,trig} setfiletype n3
-  autocmd! BufNewFile,BufRead *.{rq,sparql} setfiletype sparql
-  autocmd! BufNewFile,BufRead *.{md,markdown,mdown,mkd,mkdn,txt} setfiletype markdown
-  autocmd! BufNewFile,BufRead *.mk setfiletype make
+  autocmd!
+  autocmd BufNewFile,BufRead *.{rdf,rdfs,owl} setfiletype xml
+  autocmd BufNewFile,BufRead *.{n3,ttl,trig} setfiletype n3
+  autocmd BufNewFile,BufRead *.{rq,sparql} setfiletype sparql
+  autocmd BufNewFile,BufRead *.{md,markdown,mdown,mkd,mkdn,txt} setfiletype markdown
+  autocmd BufNewFile,BufRead *.mk setfiletype make
 
   autocmd FileType dockerfile setlocal commentstring=#\ %s
   autocmd FileType n3 setlocal commentstring=#\ %s

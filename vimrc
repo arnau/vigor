@@ -1,11 +1,12 @@
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
+
+" Helpers {{{
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Helpers {{{
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/vimshell.vim'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -13,8 +14,8 @@ Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'w0rp/ale'
+Plug 'rmolin88/vim-pomodoro'
 " }}}
-
 
 " Context {{{
 Plug 'airblade/vim-gitgutter'
@@ -112,17 +113,14 @@ Plug 'Quramy/tsuquyomi'
 
 call plug#end()
 
-" set termguicolors
-set t_8f=[38;2;%lu;%lu;%lum
-set t_8b=[48;2;%lu;%lu;%lum
-
+" Sections {{{
 source ~/.vim/sections/basics.vim
 source ~/.vim/sections/gitgutter.vim
 source ~/.vim/sections/limelight.vim
 source ~/.vim/sections/airline.vim
 source ~/.vim/sections/fzf.vim
 source ~/.vim/sections/ale.vim
-
+" }}}
 
 " Signature {{{
 let g:SignatureMarkTextHLDynamic = 1
