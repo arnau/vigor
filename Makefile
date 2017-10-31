@@ -7,8 +7,18 @@ install:
 	cargo install racer
 	pip3 install vim-vint
 	pip3 install proselint
-	brew install shellcheck
 	vim -c PlugInstall
 
 image:
 	docker build -t arnau/vigor .
+
+
+# shellcheck: Shell linter
+shellcheck:
+	brew install shellcheck
+.PHONY: shellcheck
+
+# hadolint: Dockerfile linter
+hadolint:
+	brew install hadolint
+.PHONY: hadolint
