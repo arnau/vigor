@@ -46,6 +46,7 @@ Plug 'zanglg/nova.vim'
 " Languages {{{
 "Plug 'vim-scripts/Emmet.vim'
 
+Plug 'idris-hackers/idris-vim'
 Plug 'elmcast/elm-vim'
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['rust', 'elm']
