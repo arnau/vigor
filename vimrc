@@ -46,8 +46,8 @@ Plug 'zanglg/nova.vim'
 " Languages {{{
 "Plug 'vim-scripts/Emmet.vim'
 
-Plug 'idris-hackers/idris-vim'
-Plug 'elmcast/elm-vim'
+Plug 'idris-hackers/idris-vim', { 'for': 'idris' }
+Plug 'elmcast/elm-vim', { 'for': 'elm' }
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['rust', 'elm']
 
@@ -79,13 +79,13 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 
-Plug 'docker/docker' , { 'rtp': '/contrib/syntax/vim' }
+Plug 'docker/docker' , { 'for': 'docker', 'rtp': '/contrib/syntax/vim' }
 
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
-Plug 'flowtype/vim-flow'
+Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 
 Plug 'arnau/sparql.vim'
 
@@ -95,21 +95,20 @@ Plug 'vim-scripts/n3.vim'
 
 Plug 'moskytw/nginx-contrib-vim'
 
-Plug 'JuliaLang/julia-vim'
+Plug 'JuliaLang/julia-vim', { 'for': 'julia' }
 
-Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer'
 
-
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
 " Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
 " Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
 Plug 'reasonml/vim-reason'
 
-Plug 'raichoo/purescript-vim'
+Plug 'raichoo/purescript-vim', { 'for': 'purescript' }
 
-Plug 'Quramy/tsuquyomi'
+Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
 " }}}
 
 call plug#end()
