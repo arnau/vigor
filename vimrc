@@ -51,6 +51,17 @@ Plug 'elmcast/elm-vim', { 'for': 'elm' }
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['rust', 'elm']
 
+function! BuildComposer(info)
+  if a:info.status != 'unchanged' || a:info.force
+    if has('nvim')
+      !cargo build --release
+    else
+      !cargo build --release --no-default-features --features json-rpc
+    endif
+  endif
+endfunction
+Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 function! s:goyo_enter()
   silent !tmux set status off
