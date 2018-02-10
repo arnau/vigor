@@ -28,20 +28,11 @@ Plug 'metakirby5/codi.vim'
 " }}}
 
 " Colorschemes {{{
-Plug 'junegunn/limelight.vim'
 Plug 'arnau/teaspoon.vim'
-Plug 'arnau/stonespoon.vim'
-Plug 'chriskempson/tomorrow-theme', { 'rtp': '/vim'}
-Plug 'joshdick/onedark.vim'
-Plug 'gosukiwi/vim-atom-dark'
 Plug 'tomasr/molokai'
-Plug 'vim-scripts/Wombat'
 Plug 'zaki/zazen'
-Plug 'kamwitsta/mythos'
 Plug 'KeitaNakamura/neodark.vim'
-Plug 'xero/blaquemagick.vim'
 Plug 'jacoborus/tender.vim'
-Plug 'zanglg/nova.vim'
 " }}}
 
 " Languages {{{
@@ -53,7 +44,7 @@ Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['rust', 'elm']
 
 function! BuildComposer(info)
-  if a:info.status != 'unchanged' || a:info.force
+  if a:info.status !=# 'unchanged' || a:info.force
     if has('nvim')
       !cargo build --release
     else
@@ -64,30 +55,6 @@ endfunction
 Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
 
 Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
-function! s:goyo_enter()
-  silent !tmux set status off
-  silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
-  set noshowmode
-  set noshowcmd
-  set scrolloff=999
-  Limelight
-  set nocursorline
-  set listchars=
-endfunction
-
-function! s:goyo_leave()
-  silent !tmux set status on
-  silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
-  set showmode
-  set showcmd
-  set scrolloff=5
-  Limelight!
-  set cursorline
-  set listchars=tab:→\ ,trail:\ ,eol:¬
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 
@@ -128,7 +95,6 @@ call plug#end()
 " Sections {{{
 source ~/.vim/sections/basics.vim
 source ~/.vim/sections/gitgutter.vim
-source ~/.vim/sections/limelight.vim
 source ~/.vim/sections/airline.vim
 source ~/.vim/sections/fzf.vim
 source ~/.vim/sections/ale.vim
