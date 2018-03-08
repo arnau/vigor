@@ -25,6 +25,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ap/vim-css-color'
 Plug 'metakirby5/codi.vim'
+Plug 'tpope/vim-db'
 " }}}
 
 " Colorschemes {{{
