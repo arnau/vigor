@@ -89,6 +89,8 @@ Plug 'reasonml/vim-reason'
 Plug 'raichoo/purescript-vim', { 'for': 'purescript' }
 
 Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
+
+Plug 'lifepillar/pgsql.vim'
 " }}}
 
 call plug#end()
