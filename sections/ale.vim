@@ -15,8 +15,10 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 " let g:ale_open_list = 1
+let g:rust_rustfmt_executable = 'cargo fmt --'
 let g:ale_fixers = {
 \    'javascript': ['prettier_eslint', 'eslint'],
+\    'rust': ['rustfmt'],
 \}
 let g:ale_fix_on_save = 1
 
@@ -30,3 +32,4 @@ let g:ale_linters = {
 \   'swift': ['swiftlint'],
 \   'python': ['flake8', 'pylint'],
 \}
+
