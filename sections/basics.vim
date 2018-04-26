@@ -142,4 +142,7 @@ vmap <Enter> <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Prepends copyright and license
+nnoremap <Leader>mit :0r ~/.vim/mit-lite.txt<CR>
 " }}}
