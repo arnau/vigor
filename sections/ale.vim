@@ -33,3 +33,5 @@ let g:ale_linters = {
 \   'python': ['flake8', 'pylint'],
 \}
 
+" Markdown
+let g:markdown_composer_autostart = 0
