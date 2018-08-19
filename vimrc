@@ -84,7 +84,8 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
 " Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
 " Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
-Plug 'reasonml/vim-reason'
+" Plug 'reasonml/vim-reason'
+Plug 'reasonml-editor/vim-reason-plus'
 
 Plug 'raichoo/purescript-vim', { 'for': 'purescript' }
 
