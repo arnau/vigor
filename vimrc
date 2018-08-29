@@ -86,6 +86,10 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 " Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
 " Plug 'reasonml/vim-reason'
 Plug 'reasonml-editor/vim-reason-plus'
+" Plug 'autozimu/LanguageClient-neovim', {
+"     \ 'branch': 'next',
+"     \ 'do': 'bash install.sh',
+"     \ }
 
 Plug 'raichoo/purescript-vim', { 'for': 'purescript' }
 
