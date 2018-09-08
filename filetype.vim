@@ -50,6 +50,9 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead *.md setfiletype markdown
   autocmd BufNewFile,BufRead *.markdown setfiletype markdown
   autocmd BufNewFile,BufRead *.mk setfiletype make
+  autocmd BufNewFile,BufRead *.elm setfiletype elm
+  autocmd BufNewFile,BufRead *.re setfiletype reason
+  autocmd BufNewFile,BufRead *.rei setfiletype reason
 
   autocmd FileType dockerfile setlocal commentstring=#\ %s
   autocmd FileType n3 setlocal commentstring=#\ %s
