@@ -75,8 +75,6 @@ Plug 'vim-scripts/n3.vim'
 
 Plug 'moskytw/nginx-contrib-vim'
 
-Plug 'JuliaLang/julia-vim', { 'for': 'julia' }
-
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 Plug 'racer-rust/vim-racer'
 
@@ -84,14 +82,7 @@ Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 
 " Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
 " Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
-" Plug 'reasonml/vim-reason'
 Plug 'reasonml-editor/vim-reason-plus'
-" Plug 'autozimu/LanguageClient-neovim', {
-"     \ 'branch': 'next',
-"     \ 'do': 'bash install.sh',
-"     \ }
-
-Plug 'raichoo/purescript-vim', { 'for': 'purescript' }
 
 Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
 
