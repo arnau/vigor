@@ -41,6 +41,7 @@ Plug 'jacoborus/tender.vim'
 
 Plug 'idris-hackers/idris-vim', { 'for': 'idris' }
 Plug 'elmcast/elm-vim', { 'for': 'elm' }
+let g:elm_setup_keybindings = 0
 Plug 'sheerun/vim-polyglot'
 let g:polyglot_disabled = ['rust', 'elm']
 
