@@ -21,10 +21,14 @@ let g:ale_fixers = {
 \    'javascript': ['prettier_eslint', 'eslint'],
 \    'rust': ['rustfmt'],
 \    'reason': ['refmt'],
+\    'python': ['isort'],
 \}
 let g:ale_fix_on_save = 1
 
 let g:ale_ruby_rubocop_executable = 'bundle exec rubocop'
+let g:ale_python_auto_pipenv = 1
+" let g:ale_python_bandit_executable = 'pipenv'
+" let g:ale_python_flake8_executable = 'pipenv'
 
 " Pick and choose linters
 " \   'javascript': ['eslint', 'prettier-eslint'],
