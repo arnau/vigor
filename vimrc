@@ -86,6 +86,8 @@ Plug 'reasonml-editor/vim-reason-plus'
 Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
 
 Plug 'lifepillar/pgsql.vim'
+
+Plug 'pest-parser/pest.vim'
 " }}}
 
 call plug#end()
