@@ -88,6 +88,8 @@ Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
 Plug 'lifepillar/pgsql.vim'
 
 Plug 'pest-parser/pest.vim'
+
+Plug 'arnau/vim-abnf-utf8'
 " }}}
 
 call plug#end()
