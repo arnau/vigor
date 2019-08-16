@@ -16,7 +16,7 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 " let g:ale_open_list = 1
 let g:rust_rustfmt_executable = 'cargo fmt --'
-let g:ale_reasonml_refmt_executable = 'refmt'
+let g:ale_reasonml_refmt_executable = 'yarn refmt'
 let g:ale_fixers = {
 \    'javascript': ['prettier_eslint', 'eslint'],
 \    'rust': ['rustfmt'],
