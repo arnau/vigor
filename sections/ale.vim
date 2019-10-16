@@ -22,6 +22,7 @@ let g:ale_fixers = {
 \    'rust': ['rustfmt'],
 \    'reason': ['refmt'],
 \    'python': ['isort'],
+\    'ocaml': ['ocp-indent'],
 \}
 let g:ale_fix_on_save = 1
 
@@ -37,6 +38,8 @@ let g:ale_linters = {
 \   'rust': ['cargo'],
 \   'swift': ['swiftlint'],
 \   'python': ['flake8', 'pylint'],
+\   'ocaml': ['merlin'],
+\   'reason': [],
 \}
 
 " Markdown
