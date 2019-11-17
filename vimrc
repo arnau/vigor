@@ -30,10 +30,10 @@ Plug 'tpope/vim-db'
 
 " Colorschemes {{{
 Plug 'arnau/teaspoon.vim'
-Plug 'tomasr/molokai'
 Plug 'zaki/zazen'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'jacoborus/tender.vim'
+Plug 'jordwalke/flatlandia'
 " }}}
 
 " Languages {{{
