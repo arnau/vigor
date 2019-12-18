@@ -68,8 +68,6 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 
-Plug 'jparise/vim-graphql'
-
 Plug 'cespare/vim-toml'
 
 Plug 'vim-scripts/n3.vim'
