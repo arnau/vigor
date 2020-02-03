@@ -99,7 +99,7 @@ source ~/.vim/sections/basics.vim
 source ~/.vim/sections/gitgutter.vim
 source ~/.vim/sections/airline.vim
 source ~/.vim/sections/fzf.vim
-source ~/.vim/sections/ocaml.vim
+" source ~/.vim/sections/ocaml.vim
 source ~/.vim/sections/ale.vim
 " }}}
 
