@@ -1,4 +1,4 @@
-" FZF
+" FZF and also Skim
 
 nnoremap <LocalLeader>f :Files <CR>
 
@@ -7,4 +7,4 @@ nnoremap <LocalLeader>b :Buffers<CR>
 
 
 " Search
-nnoremap <LocalLeader>s :Ag<CR>
+nnoremap <LocalLeader>s :Rg<CR>
