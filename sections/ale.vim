@@ -51,7 +51,8 @@ let g:markdown_composer_autostart = 0
 " let g:racer_cmd = "~/.cargo/bin/racer"
 augroup Racer
     autocmd!
-    autocmd FileType rust nmap <buffer> <localleader>gd <Plug>(rust-doc)
+    autocmd FileType rust nmap <buffer> <localleader>gD <Plug>(rust-doc)
+    autocmd FileType rust nmap <buffer> <localleader>gd <Plug>(rust-def)
     autocmd FileType rust nmap <buffer> <localleader>gs <Plug>(rust-def-split)
     autocmd FileType rust nmap <buffer> <localleader>gt <Plug>(rust-def-tab)
 augroup END
