@@ -143,6 +143,10 @@ vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" Prepends copyright and license
+" Prepends copyright and MIT license
 nnoremap <Leader>mit :0r ~/.vim/mit-lite.txt<CR>
+
+" Prepends copyright and Apache 2.0 license
+nnoremap <Leader>ach :0r ~/.vim/apache-lite.txt<CR>
+
 " }}}
