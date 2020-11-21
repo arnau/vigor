@@ -4,8 +4,6 @@ call plug#begin('~/.vim/plugged')
 
 " Helpers {{{
 Plug 'tpope/vim-sensible'
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Plug 'junegunn/fzf.vim'
 Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
 Plug 'lotabout/skim.vim'
 
@@ -16,6 +14,7 @@ Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
 Plug 'w0rp/ale'
+Plug 'mbbill/undotree'
 " }}}
 
 " Context {{{

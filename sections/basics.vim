@@ -149,4 +149,6 @@ nnoremap <Leader>mit :0r ~/.vim/mit-lite.txt<CR>
 " Prepends copyright and Apache 2.0 license
 nnoremap <Leader>ach :0r ~/.vim/apache-lite.txt<CR>
 
+" Toggles the undo history tree
+nnoremap <LocalLeader>u :UndotreeToggle<CR>
 " }}}
