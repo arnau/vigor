@@ -54,6 +54,7 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead *.elm setfiletype elm
   autocmd BufNewFile,BufRead *.re setfiletype reason
   autocmd BufNewFile,BufRead *.rei setfiletype reason
+  autocmd BufNewFile,BufRead *.csv setfiletype csv
 
   autocmd FileType dockerfile setlocal commentstring=#\ %s
   autocmd FileType n3 setlocal commentstring=#\ %s
