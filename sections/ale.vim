@@ -40,6 +40,7 @@ let g:ale_linters = {
 \   'python': ['flake8', 'pylint'],
 \   'ocaml': ['merlin'],
 \   'reason': [],
+\   'typescript': ['tslint'],
 \}
 
 " Markdown
