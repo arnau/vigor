@@ -25,7 +25,8 @@ set cursorline
 set encoding=utf-8
 scriptencoding utf-8
 set colorcolumn=80
-set textwidth=78
+set textwidth=0
+set wrap
 
 set noerrorbells
 set novisualbell
