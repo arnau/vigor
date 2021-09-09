@@ -64,6 +64,8 @@ Plug 'reasonml-editor/vim-reason-plus'
 Plug 'pest-parser/pest.vim'
 
 Plug 'arnau/vim-abnf-utf8'
+
+Plug 'AndrewRadev/inline_edit.vim'
 " }}}
 
 call plug#end()
