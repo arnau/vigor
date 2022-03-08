@@ -57,7 +57,6 @@ paq {
   "nvim-lualine/lualine.nvim";
 
   -- [ helpers ] {{{
-  -- "tpope/vim-commentary";
   "numToStr/Comment.nvim";
   "tpope/vim-surround";
   "tpope/vim-repeat";
@@ -67,10 +66,18 @@ paq {
   "lewis6991/gitsigns.nvim"; -- requires plenary
   "mbbill/undotree";
   "AckslD/nvim-neoclip.lua";
+  "gpanders/editorconfig.nvim";
+  "easymotion/vim-easymotion";
   -- }}}
 
   -- syntaxes {{{
   "preservim/vim-markdown";
+  "ap/vim-css-color";
+  "pest-parser/pest.vim";
+  -- }}}
+
+  -- markdown {{{
+  {"euclio/vim-markdown-composer", run = "cargo build --release --locked"};
   -- }}}
 
   -- lua {{{
