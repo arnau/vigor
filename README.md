@@ -1,29 +1,15 @@
 # Vigor
 
-Vigor is Arnau Siches' Vim Playground.
+My personal neovim configuration. The `vim` branch has the vim8 configuration.
 
 ## Usage
 
-Use the dockerized version:
-
 ```sh
-docker run --rm -it -v /var/foo:/var/foo -w /var/foo arnau/vigor
+git clone git://github.com/arnau/Vigor.git ~/.config/nvim
+nvim --headless -u NONE -c 'lua require("bootstrap").bootstrap_paq()'
 ```
 
-Or the manual way: Clone the repository.
-
-```sh
-git clone git://github.com/arnau/Vigor.git ~/.vim
-cd ~/.vim
-make install
-```
-
-## Anti-patterns
-
-* http://rbtnn.hateblo.jp/entry/2014/12/28/010913
-
-
-## License
+## Licence
 
 This is free and unencumbered public domain software. For more information,
 see http://unlicense.org/ or the accompanying UNLICENSE file.
