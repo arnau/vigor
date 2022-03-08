@@ -13,7 +13,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/vim-easy-align'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'mbbill/undotree'
 " }}}
 
@@ -54,8 +54,10 @@ Plug 'cespare/vim-toml'
 
 Plug 'vim-scripts/n3.vim'
 
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'racer-rust/vim-racer'
+" Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+" Plug 'racer-rust/vim-racer'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 
 " Plug 'the-lambda-church/merlin', { 'rtp': '/vim/merlin' }
 " Plug 'ocaml/merlin', { 'rtp': '/vim/merlin' }
@@ -76,7 +78,7 @@ source ~/.vim/sections/gitgutter.vim
 source ~/.vim/sections/airline.vim
 source ~/.vim/sections/fzf.vim
 " source ~/.vim/sections/ocaml.vim
-source ~/.vim/sections/ale.vim
+" source ~/.vim/sections/ale.vim
 " }}}
 
 " Signature {{{
