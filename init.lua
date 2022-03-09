@@ -57,8 +57,8 @@ paq({
 
   -- [ helpers ] {{{
   "numToStr/Comment.nvim",
-  "tpope/vim-surround",
   "tpope/vim-repeat",
+  "tpope/vim-surround", -- requires vim-repeat
   "junegunn/vim-easy-align",
   "windwp/nvim-autopairs",
   "DanilaMihailov/beacon.nvim",
