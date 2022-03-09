@@ -6,9 +6,17 @@ local cmd = vim.api.nvim_command
 
 -- [[ colours and fonts ]] {{{
 opt.termguicolors = true
--- TODO: Not loading on init
+
 g.seoul256_background = 234
 cmd("colorscheme seoul256")
+
+-- cmd("colorscheme themer_everforest")
+
+-- require("material").setup()
+-- cmd("colorscheme material")
+-- g.material_style = "deep blue"
+
+
 -- }}}
 
 -- [[ context ]] {{{
@@ -29,13 +37,12 @@ opt.conceallevel = 2
 -- opt.concealcursor = ''
 
 -- TODO: review with nvim 0.7
-cmd('au TextYankPost * silent! lua vim.highlight.on_yank {on_visual = false}')
+cmd("au TextYankPost * silent! lua vim.highlight.on_yank {on_visual = false}")
 -- }}}
 
 -- [[ undo ]] {{{
 opt.undofile = true
 -- }}}
-
 
 -- [[ encoding ]] {{{
 opt.encoding = "utf-8"
