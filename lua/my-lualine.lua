@@ -1,18 +1,22 @@
-local lualine = require('lualine')
+local lualine = require("lualine")
 
-
-lualine.setup {
+lualine.setup({
   options = {
     icons_enabled = false,
-    theme = 'auto',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = '' },
+    theme = "teaspoon",
+    component_separators = { left = "", right = "" },
+    section_separators = { left = "", right = "" },
     disabled_filetypes = {},
     always_divide_middle = true,
   },
   sections = {
     lualine_a = {
-      { "mode", fmt = function(str) return str:sub(1,1) end }
+      {
+        "mode",
+        fmt = function(str)
+          return str:sub(1, 1)
+        end,
+      },
     },
     lualine_b = { "branch", "diff", "diagnostics" },
     lualine_c = { "filename" },
@@ -26,8 +30,8 @@ lualine.setup {
     lualine_c = { "filename" },
     lualine_x = { "location" },
     lualine_y = {},
-    lualine_z = {}
+    lualine_z = {},
   },
   tabline = {},
-  extensions = {}
-}
+  extensions = {},
+})

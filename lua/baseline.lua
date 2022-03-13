@@ -1,21 +1,22 @@
 -- Baseline configuration
 
-local g = vim.g
+-- local g = vim.g
 local opt = vim.opt
 local cmd = vim.api.nvim_command
 
 -- [[ colours and fonts ]] {{{
 opt.termguicolors = true
 
-g.seoul256_background = 234
-cmd("colorscheme seoul256")
+-- g.seoul256_background = 234
+-- cmd("colorscheme seoul256")
+
+cmd("colorscheme teaspoon")
 
 -- cmd("colorscheme themer_everforest")
 
 -- require("material").setup()
 -- cmd("colorscheme material")
 -- g.material_style = "deep blue"
-
 
 -- }}}
 
@@ -51,7 +52,6 @@ opt.fileencoding = "utf-8"
 
 -- [[ theme ]] {{{
 opt.syntax = "ON"
-opt.termguicolors = true
 -- }}}
 
 -- [[ whitespace ]] {{{

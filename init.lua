@@ -69,6 +69,7 @@ paq({
   "easymotion/vim-easymotion",
   "sunjon/shade.nvim",
   "folke/zen-mode.nvim",
+  "chentau/marks.nvim",
   -- }}}
 
   -- syntaxes {{{
@@ -91,10 +92,14 @@ paq({
 
   -- themes
   "junegunn/seoul256.vim",
-  "marko-cerovac/material.nvim";
-  "themercorp/themer.lua";
+  "marko-cerovac/material.nvim",
+  -- "themercorp/themer.lua";
+  "rktjmp/lush.nvim",
+  "arnau/teaspoon.nvim",
 })
 
+-- XXX: Debug colorscheme
+-- vim.opt.runtimepath:append("~/kitchen/teaspoon.nvim")
 
 -- [ sections ]
 require("baseline")
@@ -106,7 +111,6 @@ require("my-treesitter")
 require("my-lualine")
 require("my-gitsigns")
 require("my-rust")
-
 
 -- [ plugins setup ] {{{
 
@@ -133,5 +137,7 @@ require("shade").setup({
 
 -- TODO: Not working
 require("zen-mode").setup()
+
+require("marks").setup({})
 
 -- }}}
