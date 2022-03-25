@@ -10,13 +10,8 @@ opt.termguicolors = true
 -- g.seoul256_background = 234
 -- cmd("colorscheme seoul256")
 
+-- require("teaspoon").setup()
 cmd("colorscheme teaspoon")
-
--- cmd("colorscheme themer_everforest")
-
--- require("material").setup()
--- cmd("colorscheme material")
--- g.material_style = "deep blue"
 
 -- }}}
 
@@ -62,6 +57,8 @@ opt.softtabstop = 2
 opt.list = true
 opt.listchars = { tab = "→ ", trail = "¬" }
 opt.showbreak = "···"
+opt.wrap = true
+opt.linebreak = true
 -- }}}
 
 -- [[ search ]] {{{
