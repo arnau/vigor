@@ -140,4 +140,11 @@ require("zen-mode").setup()
 
 require("marks").setup({})
 
+-- vim-markdown
+vim.g.vim_markdown_folding_disabled = true
+-- vim.g.vim_markdown_folding_level = 6
+
+-- markdown-composer
+vim.g.markdown_composer_open_browser = false
+
 -- }}}
