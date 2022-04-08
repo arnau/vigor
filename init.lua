@@ -96,6 +96,7 @@ paq({
   -- "themercorp/themer.lua";
   "rktjmp/lush.nvim",
   "arnau/teaspoon.nvim",
+  "savq/melange",
 })
 
 -- XXX: Debug colorscheme
