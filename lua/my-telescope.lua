@@ -15,7 +15,7 @@ telescope.setup {
       i = {
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
-        ["xx"] = actions.close,
+        ["xx"] = actions.delete_buffer,
         ["qq"] = actions.close,
       },
       n = {

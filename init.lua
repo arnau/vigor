@@ -69,7 +69,7 @@ paq({
   "easymotion/vim-easymotion",
   "sunjon/shade.nvim",
   "folke/zen-mode.nvim",
-  "chentau/marks.nvim",
+  "chentoast/marks.nvim",
   -- }}}
 
   -- syntaxes {{{
@@ -89,6 +89,12 @@ paq({
   -- rust {{{
   "simrat39/rust-tools.nvim", -- requires telescope-ui-select, popui, lsp
   -- }}}
+
+  -- clojure (lisp) {{{
+  "Olical/conjure",
+  -- }}}
+
+
 
   -- themes
   "junegunn/seoul256.vim",
