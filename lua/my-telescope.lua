@@ -33,6 +33,5 @@ telescope.setup {
 
 -- [ plugins ]
 telescope.load_extension("heading")
-telescope.load_extension("frecency")
 telescope.load_extension("ui-select")
 telescope.load_extension("neoclip")

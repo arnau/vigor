@@ -42,8 +42,6 @@ paq({
   -- telescope
   "nvim-telescope/telescope-symbols.nvim",
   "crispgm/telescope-heading.nvim",
-  "tami5/sqlite.lua",
-  "nvim-telescope/telescope-frecency.nvim", -- depends on sqlite.lua
   "sudormrfbin/cheatsheet.nvim", -- depends on plenary and popup
   "nvim-telescope/telescope-ui-select.nvim",
 
@@ -67,9 +65,10 @@ paq({
   "AckslD/nvim-neoclip.lua",
   "gpanders/editorconfig.nvim",
   "easymotion/vim-easymotion",
-  "sunjon/shade.nvim",
+  -- "sunjon/shade.nvim",
   "folke/zen-mode.nvim",
   "chentoast/marks.nvim",
+  "sindrets/diffview.nvim",
   -- }}}
 
   -- syntaxes {{{
@@ -118,6 +117,7 @@ require("my-treesitter")
 require("my-lualine")
 require("my-gitsigns")
 require("my-rust")
+require("my-diffview")
 
 -- [ plugins setup ] {{{
 
@@ -132,15 +132,15 @@ require("comment").setup()
 
 require("colorizer").setup()
 
-require("shade").setup({
-  overlay_opacity = 60,
-  opacity_step = 1,
-  keys = {
-    brightness_up = "<M-Up>",
-    brightness_down = "<M-Down>",
-    toggle = "<leader>s",
-  },
-})
+-- require("shade").setup({
+--   overlay_opacity = 60,
+--   opacity_step = 1,
+--   keys = {
+--     brightness_up = "<M-Up>",
+--     brightness_down = "<M-Down>",
+--     toggle = "<leader>s",
+--   },
+-- })
 
 -- TODO: Not working
 require("zen-mode").setup()
