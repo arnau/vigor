@@ -69,6 +69,9 @@ paq({
   "folke/zen-mode.nvim",
   "chentoast/marks.nvim",
   "sindrets/diffview.nvim",
+
+  "kevinhwang91/promise-async",
+  "kevinhwang91/nvim-ufo", -- requires promise-async
   -- }}}
 
   -- syntaxes {{{
@@ -92,8 +95,6 @@ paq({
   -- clojure (lisp) {{{
   "Olical/conjure",
   -- }}}
-
-
 
   -- themes
   "junegunn/seoul256.vim",
@@ -153,5 +154,14 @@ vim.g.vim_markdown_folding_disabled = true
 
 -- markdown-composer
 vim.g.markdown_composer_open_browser = false
+
+-- nvim-ufo
+vim.wo.foldcolumn = "1"
+vim.wo.foldlevel = 99 -- feel free to decrease the value
+vim.wo.foldenable = true
+
+-- option 2: nvim lsp as LSP client
+-- See my-lsp#l9
+require("ufo").setup()
 
 -- }}}

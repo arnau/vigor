@@ -5,6 +5,11 @@ local cmp = require("cmp_nvim_lsp")
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp.update_capabilities(capabilities)
+-- nvim-ufo
+capabilities.textDocument.foldingRange = {
+  dynamicRegistration = false,
+  lineFoldingOnly = true,
+}
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
