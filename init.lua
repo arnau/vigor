@@ -69,6 +69,7 @@ paq({
   "folke/zen-mode.nvim",
   "chentoast/marks.nvim",
   "sindrets/diffview.nvim",
+  "drybalka/tree-climber.nvim",
   -- }}}
 
   -- syntaxes {{{
@@ -151,5 +152,16 @@ vim.g.vim_markdown_folding_disabled = true
 
 -- markdown-composer
 vim.g.markdown_composer_open_browser = false
+
+-- tree-climber
+local climber = require("tree-climber")
+local keyopts = { noremap = true, silent = true }
+vim.keymap.set({'n', 'v', 'o'}, '<leader>h', climber.goto_parent, keyopts)
+vim.keymap.set({'n', 'v', 'o'}, '<leader>l', climber.goto_child, keyopts)
+vim.keymap.set({'n', 'v', 'o'}, '<leader>j', climber.goto_next, keyopts)
+vim.keymap.set({'n', 'v', 'o'}, '<leader>k', climber.goto_prev, keyopts)
+vim.keymap.set({'v', 'o'}, 'in', climber.select_node, keyopts)
+vim.keymap.set('n', '<c-k>', climber.swap_prev, keyopts)
+vim.keymap.set('n', '<c-j>', climber.swap_next, keyopts)
 
 -- }}}
