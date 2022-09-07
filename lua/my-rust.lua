@@ -7,10 +7,6 @@ local opts = {
         -- Automatically set inlay hints (type hints)
         autoSetHints = true,
 
-        -- Whether to show hover actions inside the hover window
-        -- This overrides the default hover handler
-        hover_with_actions = true,
-
         -- These apply to the default RustSetInlayHints command
         inlay_hints = {
 

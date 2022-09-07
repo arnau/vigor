@@ -77,6 +77,8 @@ local function rust_config()
     on_attach = function(client, bufnr)
       on_attach(client, bufnr)
 
+      vim.keymap.set("n", "<C-space>", require("rust-tools").hover_actions.hover_actions, { buffer = bufnr })
+      vim.keymap.set("n", "<Leader>a", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
       vim.api.nvim_buf_set_keymap(
         bufnr,
         "n",
