@@ -19,10 +19,12 @@ local capabilities = cmp.default_capabilities()
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
-local on_attach = function(_, bufnr)
+local on_attach = function (_, bufnr)
   local function bufmap(mode, shortcut, command)
     vim.api.nvim_buf_set_keymap(bufnr, mode, shortcut, command, { noremap = true, silent = true })
   end
+
+  print(1)
 
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
@@ -66,22 +68,8 @@ lspconfig["sumneko_lua"].setup({
   capabilities = capabilities,
 })
 
-lspconfig["rust_analyzer"].setup({
-  on_attach = function(client, bufnr)
-    on_attach(client, bufnr)
-
-    vim.keymap.set("n", "<C-space>", require("rust-tools").hover_actions.hover_actions, { buffer = bufnr })
-    vim.keymap.set("n", "<Leader>a", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
-    vim.api.nvim_buf_set_keymap(
-      bufnr,
-      "n",
-      "<localleader>hh",
-      "<cmd>lua require('rust-tools.inlay_hints').toggle_inlay_hints()<CR>",
-      { noremap = true, silent = true }
-    )
-  end,
-  capabilities = capabilities,
-})
+-- See: my-rust.lua
+-- lspconfig["rust_analyzer"]
 
 lspconfig["taplo"].setup({
   on_attach = on_attach,
@@ -97,3 +85,10 @@ lspconfig["tsserver"].setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
+
+local M = {
+  on_attach = on_attach,
+}
+
+return M
