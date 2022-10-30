@@ -1,10 +1,21 @@
-local lsp_installer = require("nvim-lsp-installer")
+local mason = require("mason")
+local mason_lsp = require("mason-lspconfig")
+local lspconfig = require("lspconfig")
 local cmp = require("cmp_nvim_lsp")
+
+mason.setup()
+mason_lsp.setup({
+  ensure_installed = { "sumneko_lua", "rust_analyzer", "taplo", "cssls", "tsserver" },
+})
 
 -- [ autocomplete ]
 -- Add additional capabilities supported by nvim-cmp
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = cmp.update_capabilities(capabilities)
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- capabilities = cmp.default_capabilities(capabilities)
+local capabilities = cmp.default_capabilities()
+
+-- cmp_nvim_lsp.update_capabilities is deprecated, use cmp_nvim_lsp.default_capabilities instead. See :h deprecated
+-- This function will be removed in cmp-nvim-lsp version 1.0.0
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -19,7 +30,7 @@ local on_attach = function(_, bufnr)
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   bufmap("n", "<space>d", "<cmd>lua vim.lsp.buf.definition()<CR>")
-  bufmap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
+  bufmap("n", "<space>f", "<cmd>lua vim.lsp.buf.format({ async = true})<CR>")
   bufmap("n", "<space>h", "<cmd>lua vim.lsp.buf.hover()<CR>")
   bufmap("n", "<space>i", "<cmd>lua vim.lsp.buf.implementation()<CR>")
   bufmap("n", "<space>r", "<cmd>lua vim.lsp.buf.rename()<CR>")
@@ -34,83 +45,55 @@ local on_attach = function(_, bufnr)
   bufmap("n", "<space>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>")
 end
 
--- Config for `sumneko_lua`
-local function lua_config()
-  return {
-    settings = {
-      Format = {
-        function()
-          require("stylua-nvim").format_file()
-        end,
+lspconfig["sumneko_lua"].setup({
+  commands = {
+    Format = {
+      require("stylua-nvim").format_file,
+    },
+  },
+  settings = {
+    Lua = {
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global
+        globals = { "vim" },
       },
-      Lua = {
-        diagnostics = {
-          -- Get the language server to recognize the `vim` global
-          globals = { "vim" },
-        },
-        telemetry = {
-          enable = false,
-        },
+      telemetry = {
+        enable = false,
       },
     },
-    on_attach = function(client, bufnr)
-      on_attach(client, bufnr)
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
-      vim.api.nvim_buf_set_keymap(
-        bufnr,
-        "n",
-        "<space>f",
-        [[<cmd>lua require("stylua-nvim").format_file()<CR>]],
-        { noremap = true, silent = true }
-      )
-    end,
-    capabilities = capabilities,
-    flags = {
-      -- This will be the default in neovim 0.7+
-      debounce_text_changes = 150,
-    },
-  }
-end
+lspconfig["rust_analyzer"].setup({
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
 
-local function rust_config()
-  return {
-    on_attach = function(client, bufnr)
-      on_attach(client, bufnr)
+    vim.keymap.set("n", "<C-space>", require("rust-tools").hover_actions.hover_actions, { buffer = bufnr })
+    vim.keymap.set("n", "<Leader>a", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
+    vim.api.nvim_buf_set_keymap(
+      bufnr,
+      "n",
+      "<localleader>hh",
+      "<cmd>lua require('rust-tools.inlay_hints').toggle_inlay_hints()<CR>",
+      { noremap = true, silent = true }
+    )
+  end,
+  capabilities = capabilities,
+})
 
-      vim.keymap.set("n", "<C-space>", require("rust-tools").hover_actions.hover_actions, { buffer = bufnr })
-      vim.keymap.set("n", "<Leader>a", require("rust-tools").code_action_group.code_action_group, { buffer = bufnr })
-      vim.api.nvim_buf_set_keymap(
-        bufnr,
-        "n",
-        "<localleader>hh",
-        "<cmd>lua require('rust-tools.inlay_hints').toggle_inlay_hints()<CR>",
-        { noremap = true, silent = true }
-      )
-    end,
-    capabilities = capabilities,
-    flags = {
-      debounce_text_changes = 150,
-    },
-  }
-end
+lspconfig["taplo"].setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
--- Register a handler that will be called for each installed server when the
--- installation is finished or the server is already installed.
-lsp_installer.on_server_ready(function(server)
-  local opts = {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    flags = {
-      debounce_text_changes = 150,
-    },
-  }
+lspconfig["cssls"].setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
-  if server.name == "sumneko_lua" then
-    opts = lua_config()
-  elseif server.name == "rust_analyzer" then
-    opts = rust_config()
-  end
-
-  -- See https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-  server:setup(opts)
-end)
+lspconfig["tsserver"].setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})

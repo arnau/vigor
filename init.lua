@@ -11,9 +11,11 @@ paq({
   "savq/paq-nvim",
 
   -- [ lsp ] {{{
+  "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
-  "williamboman/nvim-lsp-installer",
-  "mfussenegger/nvim-dap",
+  "mfussenegger/nvim-dap", -- debugger
+  "jose-elias-alvarez/null-ls.nvim", -- linter
   -- }}}
 
   -- [ autocomplete ] {{{
@@ -141,7 +143,6 @@ require("colorizer").setup()
 --   },
 -- })
 
--- TODO: Not working
 require("zen-mode").setup()
 
 require("marks").setup({})
@@ -156,11 +157,11 @@ vim.g.markdown_composer_open_browser = false
 -- tree-climber
 local climber = require("tree-climber")
 local keyopts = { noremap = true, silent = true }
-vim.keymap.set({'n', 'v', 'o'}, '<leader>h', climber.goto_parent, keyopts)
-vim.keymap.set({'n', 'v', 'o'}, '<leader>l', climber.goto_child, keyopts)
-vim.keymap.set({'n', 'v', 'o'}, '<leader>j', climber.goto_next, keyopts)
-vim.keymap.set({'n', 'v', 'o'}, '<leader>k', climber.goto_prev, keyopts)
-vim.keymap.set({'v', 'o'}, 'in', climber.select_node, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<leader>h', climber.goto_parent, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<leader>l', climber.goto_child, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<leader>j', climber.goto_next, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<leader>k', climber.goto_prev, keyopts)
+vim.keymap.set({ 'v', 'o' }, 'in', climber.select_node, keyopts)
 vim.keymap.set('n', '<c-k>', climber.swap_prev, keyopts)
 vim.keymap.set('n', '<c-j>', climber.swap_next, keyopts)
 

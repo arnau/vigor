@@ -10,10 +10,10 @@ end
 
 -- WORKAROUND: remove in neovim 0.7
 -- see: https://github.com/neovim/neovim/issues/13628
-map("c", "bd", "silent! bd", { noremap = true })
-fast_map("n", "<leader>bd", "<cmd>silent! bd<cr>")
-map("c", "bw", "silent! bw", { noremap = true })
-fast_map("n", "<leader>bw", "<cmd>silent! bw<cr>")
+-- map("c", "bd", "silent! bd", { noremap = true })
+-- fast_map("n", "<leader>bd", "<cmd>silent! bd<cr>")
+-- map("c", "bw", "silent! bw", { noremap = true })
+-- fast_map("n", "<leader>bw", "<cmd>silent! bw<cr>")
 
 -- [ contextual ] {{{
 silent_map("i", "jk", "<esc>")
