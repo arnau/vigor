@@ -78,6 +78,7 @@ paq({
   "preservim/vim-markdown",
   "norcalli/nvim-colorizer.lua",
   "pest-parser/pest.vim",
+  "NoahTheDuke/vim-just",
   -- }}}
 
   -- markdown {{{
