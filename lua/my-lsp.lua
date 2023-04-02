@@ -5,7 +5,7 @@ local cmp = require("cmp_nvim_lsp")
 
 mason.setup()
 mason_lsp.setup({
-  ensure_installed = { "sumneko_lua", "rust_analyzer", "taplo", "cssls", "tsserver" },
+  ensure_installed = { "lua_ls", "rust_analyzer", "taplo", "cssls", "tsserver" },
 })
 
 -- [ autocomplete ]
@@ -45,7 +45,7 @@ local on_attach = function (_, bufnr)
   bufmap("n", "<space>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>")
 end
 
-lspconfig["sumneko_lua"].setup({
+lspconfig["lua_ls"].setup({
   commands = {
     Format = {
       require("stylua-nvim").format_file,
