@@ -72,6 +72,7 @@ paq({
   "chentoast/marks.nvim",
   "sindrets/diffview.nvim",
   "drybalka/tree-climber.nvim",
+  "wfxr/minimap.vim", -- minimap
   -- }}}
 
   -- syntaxes {{{
@@ -167,3 +168,9 @@ vim.keymap.set('n', '<c-k>', climber.swap_prev, keyopts)
 vim.keymap.set('n', '<c-j>', climber.swap_next, keyopts)
 
 -- }}}
+--
+--
+-- minimap
+vim.g.minimap_width = 10
+vim.g.minimap_auto_start = 1
+vim.g.minimap_auto_win_enter = 1
