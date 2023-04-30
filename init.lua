@@ -14,7 +14,7 @@ paq({
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
-  "mfussenegger/nvim-dap", -- debugger
+  "mfussenegger/nvim-dap",           -- debugger
   "jose-elias-alvarez/null-ls.nvim", -- linter
   -- }}}
 
@@ -73,6 +73,7 @@ paq({
   "sindrets/diffview.nvim",
   "drybalka/tree-climber.nvim",
   "wfxr/minimap.vim", -- minimap
+  "https://github.com/nvim-pack/nvim-spectre",
   -- }}}
 
   -- syntaxes {{{
@@ -174,3 +175,17 @@ vim.keymap.set('n', '<c-j>', climber.swap_next, keyopts)
 -- vim.g.minimap_width = 10
 -- vim.g.minimap_auto_start = 1
 -- vim.g.minimap_auto_win_enter = 1
+
+-- spectre
+vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").open()<CR>', {
+  desc = "Open Spectre"
+})
+vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = "Search current word"
+})
+vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
+  desc = "Search on current file"
+})
