@@ -9,13 +9,7 @@ mason_lsp.setup({
 })
 
 -- [ autocomplete ]
--- Add additional capabilities supported by nvim-cmp
--- local capabilities = vim.lsp.protocol.make_client_capabilities()
--- capabilities = cmp.default_capabilities(capabilities)
 local capabilities = cmp.default_capabilities()
-
--- cmp_nvim_lsp.update_capabilities is deprecated, use cmp_nvim_lsp.default_capabilities instead. See :h deprecated
--- This function will be removed in cmp-nvim-lsp version 1.0.0
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer

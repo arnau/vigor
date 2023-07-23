@@ -26,14 +26,8 @@ paq({
   "hrsh7th/nvim-cmp",
 
   -- Snippets
-  "saadparwaiz1/cmp_luasnip",
-  "L3MON4D3/LuaSnip",
-  "rafamadriz/friendly-snippets",
-
-  -- OR
-
-  -- "hrsh7th/cmp-vsnip";
-  -- "hrsh7th/vim-vsnip";
+  -- "hrsh7th/cmp-vsnip",
+  -- "hrsh7th/vim-vsnip",
   -- }}}
 
   -- fuzzy search
@@ -42,13 +36,12 @@ paq({
   "nvim-telescope/telescope.nvim", -- depends on plenary
 
   -- telescope
-  "nvim-telescope/telescope-symbols.nvim",
-  "crispgm/telescope-heading.nvim",
-  "sudormrfbin/cheatsheet.nvim", -- depends on plenary and popup
+  -- "nvim-telescope/telescope-symbols.nvim",
   "nvim-telescope/telescope-ui-select.nvim",
+  "nvim-telescope/telescope-media-files.nvim",
 
-  "RishabhRD/popfix",
-  "hood/popui.nvim", -- requires popfix
+  -- "RishabhRD/popfix",
+  -- "hood/popui.nvim", -- requires popfix
 
   "nvim-treesitter/nvim-treesitter",
 
@@ -61,19 +54,12 @@ paq({
   "tpope/vim-surround", -- requires vim-repeat
   "junegunn/vim-easy-align",
   "windwp/nvim-autopairs",
-  "DanilaMihailov/beacon.nvim",
   "lewis6991/gitsigns.nvim", -- requires plenary
-  "mbbill/undotree",
-  "AckslD/nvim-neoclip.lua",
+  "AckslD/nvim-neoclip.lua", -- requires telescope
   "gpanders/editorconfig.nvim",
-  "easymotion/vim-easymotion",
-  -- "sunjon/shade.nvim",
-  "folke/zen-mode.nvim",
   "chentoast/marks.nvim",
   "sindrets/diffview.nvim",
-  "drybalka/tree-climber.nvim",
-  "wfxr/minimap.vim", -- minimap
-  "https://github.com/nvim-pack/nvim-spectre",
+  "drybalka/tree-climber.nvim", -- requires treesitter
   -- }}}
 
   -- syntaxes {{{
@@ -83,29 +69,18 @@ paq({
   "NoahTheDuke/vim-just",
   -- }}}
 
-  -- markdown {{{
-  { "euclio/vim-markdown-composer", run = "cargo build --release --locked" },
-  -- }}}
-
   -- lua {{{
-  "ckipp01/stylua-nvim",
+  "ckipp01/stylua-nvim", -- required by lua lsp
   -- }}}
 
   -- rust {{{
   "simrat39/rust-tools.nvim", -- requires telescope-ui-select, popui, lsp
   -- }}}
 
-  -- clojure (lisp) {{{
-  "Olical/conjure",
-  -- }}}
-
   -- themes
   "junegunn/seoul256.vim",
-  "marko-cerovac/material.nvim",
-  -- "themercorp/themer.lua";
   "rktjmp/lush.nvim",
   "arnau/teaspoon.nvim",
-  "savq/melange",
 })
 
 -- XXX: Debug colorscheme
@@ -125,8 +100,6 @@ require("my-diffview")
 
 -- [ plugins setup ] {{{
 
-vim.ui.select = require("popui.ui-overrider")
-
 -- TODO: https://github.com/LunarVim/Neovim-from-scratch/blob/09-autopairs/lua/user/autopairs.lua
 require("nvim-autopairs").setup()
 
@@ -135,18 +108,6 @@ require("neoclip").setup()
 require("comment").setup()
 
 require("colorizer").setup()
-
--- require("shade").setup({
---   overlay_opacity = 60,
---   opacity_step = 1,
---   keys = {
---     brightness_up = "<M-Up>",
---     brightness_down = "<M-Down>",
---     toggle = "<leader>s",
---   },
--- })
-
-require("zen-mode").setup()
 
 require("marks").setup({})
 
@@ -160,13 +121,11 @@ vim.g.markdown_composer_open_browser = false
 -- tree-climber
 local climber = require("tree-climber")
 local keyopts = { noremap = true, silent = true }
-vim.keymap.set({ 'n', 'v', 'o' }, '<leader>h', climber.goto_parent, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<leader>l', climber.goto_child, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<leader>j', climber.goto_next, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<leader>k', climber.goto_prev, keyopts)
-vim.keymap.set({ 'v', 'o' }, 'in', climber.select_node, keyopts)
-vim.keymap.set('n', '<c-k>', climber.swap_prev, keyopts)
-vim.keymap.set('n', '<c-j>', climber.swap_next, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<c-o>', climber.goto_parent, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<c-i>', climber.goto_child, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<c-n>', climber.goto_next, keyopts)
+vim.keymap.set({ 'n', 'v', 'o' }, '<c-p>', climber.goto_prev, keyopts)
+vim.keymap.set({ 'v', 'o' }, '<c-s>', climber.select_node, keyopts)
 
 -- }}}
 --
