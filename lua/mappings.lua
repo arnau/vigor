@@ -17,9 +17,16 @@ end
 
 -- [ contextual ] {{{
 silent_map("i", "jk", "<esc>")
+silent_map("i", "<C-j>", "<esc>")
 map("n", "<space><space>", ":", { noremap = true, nowait = true })
 map("n", "q<space>", "q:", { noremap = true, nowait = true })
 map("n", "<leader>l", ":lua ", { noremap = true })
+map("n", "ge", "G<CR>", { noremap = true })
+map("n", "gl", "$", { noremap = true })
+map("n", "gh", "^", { noremap = true })
+map("v", "ge", "G$<CR>", { noremap = true })
+map("v", "gl", "$", { noremap = true })
+map("v", "gh", "^", { noremap = true })
 
 -- clear trailing whitespace
 local clean_trailing_ws = [[:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<cr>]]
@@ -45,8 +52,8 @@ fast_map("v", "<leader>P", [["+P]])
 -- map("c", "<C-e", "<End>", { noremap = true, nowait = true })
 -- map("c", "<C-l", "<S-Right>", { noremap = true, nowait = true })
 -- map("c", "<C-h", "<S-Left>", { noremap = true, nowait = true })
-map("c", "<C-k>", "<Up>", { noremap = true , nowait = true })
-map("c", "<C-j>", "<Down>", { noremap = true , nowait = true })
+-- map("c", "<C-k>", "<Up>", { noremap = true , nowait = true })
+-- map("c", "<C-j>", "<Down>", { noremap = true , nowait = true })
 
 -- buffer navigation
 fast_map("n", "<S-l>", ":bnext<cr>")
