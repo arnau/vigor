@@ -21,12 +21,24 @@ silent_map("i", "<C-j>", "<esc>")
 map("n", "<space><space>", ":", { noremap = true, nowait = true })
 map("n", "q<space>", "q:", { noremap = true, nowait = true })
 map("n", "<leader>l", ":lua ", { noremap = true })
+
+-- [helixify]
 map("n", "ge", "G<CR>", { noremap = true })
 map("n", "gl", "$", { noremap = true })
 map("n", "gh", "^", { noremap = true })
 map("v", "ge", "G$<CR>", { noremap = true })
 map("v", "gl", "$", { noremap = true })
-map("v", "gh", "^", { noremap = true })
+map("v", "gh", "0", { noremap = true })
+
+map("n", "mm", "%", { noremap = true })
+map("n", "ms", "S", { noremap = true })
+map("n", "mr", "S", { noremap = true })
+map("v", "mm", "%", { noremap = true })
+map("v", "ms", "S", { noremap = true })
+map("v", "mr", "S", { noremap = true })
+map("v", ";", "<esc>", { noremap = true })
+
+
 
 -- clear trailing whitespace
 local clean_trailing_ws = [[:let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<cr>]]
