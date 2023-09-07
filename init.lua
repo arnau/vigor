@@ -14,8 +14,8 @@ paq({
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
-  "mfussenegger/nvim-dap",           -- debugger
-  "jose-elias-alvarez/null-ls.nvim", -- linter
+  "mfussenegger/nvim-dap", -- debugger
+  "mhartington/formatter.nvim", -- formatter
   -- }}}
 
   -- [ autocomplete ] {{{
@@ -121,11 +121,11 @@ vim.g.markdown_composer_open_browser = false
 -- tree-climber
 local climber = require("tree-climber")
 local keyopts = { noremap = true, silent = true }
-vim.keymap.set({ 'n', 'v', 'o' }, '<c-o>', climber.goto_parent, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<c-i>', climber.goto_child, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<c-n>', climber.goto_next, keyopts)
-vim.keymap.set({ 'n', 'v', 'o' }, '<c-p>', climber.goto_prev, keyopts)
-vim.keymap.set({ 'v', 'o' }, '<c-s>', climber.select_node, keyopts)
+vim.keymap.set({ "n", "v", "o" }, "<c-o>", climber.goto_parent, keyopts)
+vim.keymap.set({ "n", "v", "o" }, "<c-i>", climber.goto_child, keyopts)
+vim.keymap.set({ "n", "v", "o" }, "<c-n>", climber.goto_next, keyopts)
+vim.keymap.set({ "n", "v", "o" }, "<c-p>", climber.goto_prev, keyopts)
+vim.keymap.set({ "v", "o" }, "<c-s>", climber.select_node, keyopts)
 
 -- }}}
 --
@@ -136,15 +136,15 @@ vim.keymap.set({ 'v', 'o' }, '<c-s>', climber.select_node, keyopts)
 -- vim.g.minimap_auto_win_enter = 1
 
 -- spectre
-vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").open()<CR>', {
-  desc = "Open Spectre"
+vim.keymap.set("n", "<leader>S", '<cmd>lua require("spectre").open()<CR>', {
+  desc = "Open Spectre",
 })
-vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
-  desc = "Search current word"
+vim.keymap.set("n", "<leader>sw", '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = "Search current word",
 })
-vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
-  desc = "Search current word"
+vim.keymap.set("v", "<leader>sw", '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = "Search current word",
 })
-vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
-  desc = "Search on current file"
+vim.keymap.set("n", "<leader>sp", '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
+  desc = "Search on current file",
 })
